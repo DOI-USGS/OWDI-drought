@@ -1,0 +1,195 @@
+/*=====SVG CSS=====*/
+.shown, .hidden {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.hidden {
+    opacity:0;
+}
+.california, .nevada, .arizona, .mexico, .california-moved, .nevada-moved, .arizona-moved, .mexico-moved, 
+.mead-flood, .mead-surplus, .mead-normal, .mead-shortage-1, .mead-shortage-2, .mead-shortage-3,
+.legend-box, .legend-moved, .sankey-line{
+    -webkit-transition: 1s ease-in-out;
+    -moz-transition: 1s ease-in-out;
+    -o-transition: 1s ease-in-out;
+    transition:  1s ease-in-out;
+}
+
+.level-fill, .level-move {
+    -webkit-transition: 1.6s ease-in-out;
+    -moz-transition: 1.6s ease-in-out;
+    -o-transition: 1.6s ease-in-out;
+    transition:  1.6s ease-in-out;
+}
+
+.level-fill{
+    -ms-transform: scale(1,0.25); /* IE 9 */
+    -webkit-transform:  scale(1,0.25); /* Safari */
+    transform:  scale(1,0.25);
+    opacity:0;
+}
+.mexico {
+    mask: url(#mexico-mask);
+}
+
+.level-move {
+    -ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform:  scale(1,1) translateZ(0); /* Safari */
+    transform:  scale(1,1); 
+}
+.mead-flood {
+    -ms-transform: translate(0px,41.81159px); /* IE 9 */
+    -webkit-transform: translate(0px,41.81159px); /* Safari */
+    transform: translate(0px,41.81159px);
+}
+.mead-surplus {
+    -ms-transform: translate(0px,90.109px); /* IE 9 */
+    -webkit-transform: translate(0px,90.109px); /* Safari */
+    transform: translate(0px,90.109px);
+}
+.mead-normal {
+    -ms-transform: translate(0px,197.61px); /* IE 9 */
+    -webkit-transform: translate(0px,197.61px); /* Safari */
+    transform: translate(0px,197.61px);
+}
+.mead-shortage-1 {
+    -ms-transform: translate(0px,300.4px); /* IE 9 */
+    -webkit-transform: translate(0px,300.4px); /* Safari */
+    transform: translate(0px,300.4px);
+}
+.mead-shortage-2 {
+    -ms-transform: translate(0px,330.04px); /* IE 9 */
+    -webkit-transform: translate(0px,330.04px); /* Safari */
+    transform: translate(0px,330.04px);
+}
+.mead-shortage-3 {
+    -ms-transform: translate(0px,356.52px); /* IE 9 */
+    -webkit-transform: translate(0px,356.52px); /* Safari */
+    transform: translate(0px,356.52px);
+}
+.california-moved {
+    -ms-transform: translate(-40px,-20px); /* IE 9 */
+    -webkit-transform: translate(-40px,-20px); /* Safari */
+    transform: translate(-40px,-20px);
+    stroke: #FFFFFF;
+    stroke-width: 1.5;
+    fill: url(#usa-flag);
+}
+
+.nevada-moved {
+    -ms-transform: translate(-23px,-27px); /* IE 9 */
+    -webkit-transform: translate(-23px,-27px); /* Safari */
+    transform: translate(-23px,-27px);
+    stroke: #FFFFFF;
+    stroke-width: 1.5;
+    fill: url(#usa-flag);
+}
+
+.arizona-moved {
+    -ms-transform: translate(-8px,-12px); /* IE 9 */
+    -webkit-transform: translate(-8px,-12px); /* Safari */
+    transform: translate(-8px,-12px);
+    stroke: #FFFFFF;
+    stroke-width: 1.5;
+    fill: url(#usa-flag);
+}
+
+.mexico-moved {
+    -ms-transform: translate(-78px, 105px) scale(0.55); /* IE 9 */
+    -webkit-transform: translate(-78px, 105px) scale(0.55); /* Safari */
+    transform: translate(-78px, 105px) scale(0.55);
+    stroke-width: 2.73;
+    stroke: #458B00;
+    fill: url(#mexico-flag);
+    mask: "none";
+}
+
+.legend-box, .legend-hidden {
+    -ms-transform: translate(200px, 135px); /* IE 9 */
+    -webkit-transform: translate(200px, 135px); /* Safari */
+    transform: translate(200px, 135px);
+    opacity: 1;
+}
+
+.legend-hidden {
+    opacity: 0;
+}
+
+.legend-moved {
+    -ms-transform: translate(-135px, 190px); /* IE 9 */
+    -webkit-transform: translate(-135px, 190px); /* Safari */
+    transform: translate(-135px, 190px);
+    opacity: 1;
+}
+
+text {
+    font-size: 1.2em;
+    cursor: default;
+    font-family: Roboto, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.legend {
+    font-size: 16px;
+    cursor: default;
+    font-family: Roboto, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+.dater {
+    font-size: 21px;
+}
+
+.tooltip {
+    font-size: 12px;
+}
+
+.small-text {
+    font-size: 12px;
+    font-family: Roboto, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.tiny-text {
+    font-size: 11px;
+    font-family: Roboto, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#x-pictogram-sub-label {
+    font-size: 11px;
+    font-family: Roboto, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.caption {
+    font-size: 12px;
+    font-family: Roboto, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.water {
+	color: #1E628C;
+	fill: #1E628C;
+}
+
+#water-usage-svg {
+    font-size: 60%;
+}
+
+.label {
+	font-size: 1em;
+        cursor: default;
+        font-family: Roboto, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#x-pictogram-label {
+	font-size: 1em;
+}
+
+#y-pictogram-label {
+	font-size: 1em;
+}
+
+#mead-elev-projected-svg {
+    margin-left: -0.25em;
+}

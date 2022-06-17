@@ -1,0 +1,1085 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.current{
+	background:#fff;
+	color:#003366 !important;
+	}
+	
+.notCurrent{
+	background:#003366;
+	color:#fff !important;
+	}
+	
+.chill{
+	margin-bottom:0 !important;
+	}
+/*=====Leaving App CSS=====*/
+.leaving{
+	margin-right:3px;
+	}
+
+.sectionContent .explore-more{
+	text-align:center;
+	}
+
+.exploreMore{
+	border:1px solid #003366;
+	padding:10px 10px 0 10px;
+	border-radius:5px;
+	text-align:center !important;
+	margin:20px auto 20px auto !important;
+	}
+
+.exploreMore img{
+	width:100%;
+	}
+
+#dygraphExtra{
+	margin-top:20px;
+	}
+
+#lakeMeadAnimatedExtra p{
+	font-weight:300;
+	margin-bottom:10px;
+	}
+
+.exploreMore p,
+.downloadThis p{
+	text-align:center !important;
+	}
+
+.extraButton{
+	background:#003366;
+	color:#fff;
+	padding:5px 15px;
+	border:none;
+	outline:none;
+	border-radius:3px;
+	font-size:.8em;
+	margin:-10px 0 10px 0;
+	}
+
+.extraButton:hover{
+	background:#fff;
+	color:#003366;
+	border:1px solid #003366;
+	}
+
+/*Sticky Nav CSS*/
+
+.navMenu{
+	background:#003366;
+	height:60px;
+	padding:0px !important;
+	margin-bottom:0px !important;
+	}
+	
+.navMenu a{
+	font-weight:300 !important;
+	}
+	
+#stickynavContainer{
+	width:100%;
+	height:60px;
+	z-index:10;
+	}
+
+#stickynav{
+	height:60px;
+	}
+
+.navBox:first-child{
+	border-left:1px solid #fff;
+	}
+
+.navBox{
+	width:9.06%;
+	height:60px;
+	float:left;
+	border-right:1px solid #fff;
+	}
+
+.navLink{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	padding-top:19px;
+	text-decoration:none;
+	color:#fff;
+	font-weight:300;
+	}
+
+.navToolTip{
+	display:none;
+	}
+
+/*Hidden Content CSS*/
+
+.hiddenContent{
+	display:none;
+	}
+
+.readMore{
+	color:#003366 !important;
+	text-align:center !important;
+	font-weight:400 !important;
+	cursor:pointer;
+	}
+
+/*Social Media CSS*/
+
+.socialMedia{
+	height:40px;
+	width:140px;
+	position:absolute;
+	right:10px;
+	top:30px;
+	text-align:left;
+	}
+
+.onWhite{
+	top:-25px;
+	right:0;
+	}
+
+#tooHigh{
+	top:-25px;
+	}
+
+.socialMedia img{
+	width:25px;
+	cursor:pointer;
+	margin-left:20px;
+	float:left;
+	}
+
+#welcomeSocial{
+	top:80px;
+	right:10px;
+	}
+
+.takeLink,
+.takeLinkBlue{
+	width:200px;
+	height:40px;
+	padding:7px 10px 0px 10px;
+	position:absolute;
+	right:0;
+	top:25px;
+	z-index:9;
+	display:none;
+	font-size:.9em !important;
+	}
+
+.takeLink{
+	background:#fff;
+	}
+
+.takeLinkBlue{
+	background:#003366;
+	}
+
+.takeLink:after,
+.takeLinkBlue:after{
+		content:"";
+		width: 0;
+		height: 0;
+		position:absolute;
+		top:-5px;
+		right:6px;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+
+	}
+
+.takeLink:after{
+		border-bottom: 5px solid #fff;
+	}
+
+.takeLinkBlue:after{
+		border-bottom: 5px solid #003366;
+	}
+
+.takeLink input,
+.takeLinkBlue input{
+	width:100%;
+	height:25px;
+	padding:5px;
+	outline:none;
+	}
+
+/*=====Container CSS=====*/
+
+.container {
+	margin: 0 0 20px 0;
+	padding: 15px;
+	text-align: center;
+	clear:both;
+}
+
+.container a{
+	font-weight:700;
+	}
+
+#TreeRingDataLegend{
+  height: 50px;
+	margin-top: -15px;
+	margin-bottom: 40px;
+	}
+
+#Introduction,
+#Lifeline,
+#ControlStructures,
+#StorageCapacity,
+#WaterSupply,
+#ExtendedDrought,
+#SupplyDemand,
+#OneRiver,
+#DecliningStorage,
+#Shortage,
+#EraOfHope{
+	background-position: center center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	}
+
+#Introduction {
+	background-image: url('../img/keynotes/welcome-mobile.jpg');
+}
+
+#co-basin-map {
+	margin-top: 50px;
+	margin-bottom: -50px;
+}
+
+#Lifeline {
+	background-image: url('../img/keynotes/keynote2-mobile.jpg');
+}
+
+#ControlStructures {
+	background-image: url('../img/keynotes/keynote3-mobile.jpg');
+}
+
+#StorageCapacity {
+	background-image: url('../img/keynotes/keynote4-mobile.jpg');
+}
+
+#WaterSupply {
+	background-image: url('../img/keynotes/waterSupplyVariable-mobile.jpg');
+}
+
+#ExtendedDrought {
+	background-image: url('../img/keynotes/drydirt-mobile.jpg');
+}
+
+#basinReservoirContainer {
+	margin-bottom: 20px;
+}
+
+#SupplyDemand {
+	background-image: url('../img/keynotes/keynote5-mobile.jpg');
+}
+
+#OneRiver {
+	background-image: url('../img/keynotes/oneRiverTwoParts-mobile.jpg');
+}
+
+#basinDividedContainer {
+	margin-bottom: 20px;
+}
+
+#DecliningStorage {
+	background-image: url('../img/keynotes/keynote7-mobile.jpg');
+}
+
+#Shortage {
+	background-image: url('../img/keynotes/keynote8-mobile.jpg');
+}
+
+#meadStaticContainer{
+	margin-bottom:20px;
+	}
+
+#EraOfHope {
+	background-image: url('../img/keynotes/keynote9-mobile.jpg');
+}
+
+
+/*=====keynote css=====*/
+
+.keynote {
+	color: #fff;
+	width: 100%;
+	min-height: 100px;
+	margin: auto;
+	position: absolute;
+	top: 25%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.keynote h1,
+.keynote h2 {
+	font-weight: 100;
+	color: #fff;
+	padding: 10px;
+	font-weight: 300;
+}
+
+.keynote h1 {
+	font-size: 6vw;
+}
+
+.keynote h2 {
+	font-size: 6vw;
+}
+
+#keynote1 h1,
+#keynote1 h2{
+	font-weight:300;
+	}
+
+#keynote1 h2#emphasized{
+	font-weight:400;
+	}
+
+/*=====Container Section CSS=====*/
+
+.section {
+	position: relative;
+	height: 100%;
+}
+
+.sectionContent {
+	min-height: 100px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+
+.sectionContent h3,
+.sectionContent p,
+.sectionContent li {
+	text-align: left;
+}
+
+.sectionContent h3 {
+	color: #003366;
+	font-weight: 100;
+	font-size: 1.4em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.sectionContent p,
+.graphCaption p {
+	margin-bottom: 10px;
+	line-height: 1.8em;
+	font-weight:300;
+}
+
+.sectionContent p,
+.sectionContent ul {
+	font-weight: 300;
+}
+
+.sectionContent ul {
+	list-style: disc;
+	margin: 0 0 10px 20px;
+}
+
+.sectionContent ul li {
+	margin-bottom: 5px;
+}
+
+/*Supporting Info Buttons CSS*/
+
+.supportinginfo{
+	background: none;
+	color: #003366;
+	font-weight: bold;
+	padding: 5px 10px !important;
+	border: 1px solid #003366;
+	border-radius: 5px;
+	margin: 20px 0 50px 0;
+	outline: none;
+	font-size:.8em !important;
+}
+
+.supportinginfo:focus{
+	background: #003366;
+	color: #fff;
+}
+
+/*Supporting Info Content CSS*/
+
+.supportingInfoContent {
+	background: rgba(0, 51, 102, .2);
+	display: none;
+	padding: 15px;
+	color: #000;
+	margin: 0px 0 100px 0;
+	border-radius: 5px;
+}
+
+.supportingInfoContent p {
+	margin-bottom: 0;
+	line-height: 1.5em;
+}
+
+/*=====Graph Caption CSS=====*/
+
+.graphCaption{
+	background:rgba(0,51,102,.2);
+	width:100%;
+	margin:20px 0 20px 0;
+	padding:10px 10px 10px 10px;
+	border-radius:5px;
+	text-align:left;
+	}
+
+/*=====Photo Panel Mobile CSS=====*/
+#photoPanel img{
+		width:32.5%;
+		}
+
+/*welcome section CSS*/
+
+#scrollDownArrow{
+	position:absolute;
+	bottom:100px;
+	border:none;
+	left:50%;
+	}
+
+/*=====Blue Dragon CSS=====*/
+
+#blueDragon{
+		margin-bottom:20px;
+		}
+
+#dragonText{
+	padding:10px;
+	margin:10px 0 20px 0;
+	background:rgba(0,51,102,.2);
+	border-radius:5px;
+	}
+
+/*=====dygraphsection CSS=====*/
+
+#usDroughtGif{
+	margin-top:20px;
+	border:none;
+	}
+
+#droughtMovingAvg-object{
+	margin-top:20px;
+	}
+
+#leesFerry{
+	margin-top:20px;
+	}
+	
+#treeRingList{
+	list-style:disc;
+	margin:0 0 0 20px;
+	}
+
+/*=====Water-Usage Section CSS=====*/
+
+#JrGraph h2 {
+	font-size: 1em;
+}
+
+#black-white-images p{
+	margin-bottom:20px;
+	}
+
+#black-white-images{
+	margin-top:20px;
+	}
+
+#black-white-images img{
+	margin-bottom:10px;
+	}
+
+#animated-object{
+	display:none;
+	}
+
+#animated-object-mobile{
+	display:block;
+	}
+
+/*=====Before after CSS=====*/
+
+#before-after-reservoir,
+#hooverdam{
+	margin-bottom:5px;
+	}
+
+.extraPics{
+	min-height:100px;
+	margin-bottom:10px;
+	text-align:left;
+	}
+
+.extraPics img{
+	width:32.5%;
+	}
+
+.cd-image-container {
+	margin-top: 25px;
+	width:100% !important;
+}
+
+/*Lake Mead Static CSS*/
+#mead-elev-object{
+	display:none;
+	}
+
+#mead-elev-object-mobile{
+	display:block;
+	}
+
+
+/*Lake Mead Animated Section CSS*/
+
+#mead-object{
+	display:none;
+	}
+	
+#meadSVGContainer{
+	margin:0 0 20px 0;
+	}
+
+#meadSVGContainer h2 {
+	color: #fff;
+	width: 90%;
+    margin: 0 auto 30px auto;
+    max-width: 950px;
+    text-align: center;
+}
+
+#lake-mead-animated .supportingInfoContent{
+	text-align:left;
+	}
+
+.orangeLinks{
+	color:#FB7F00;
+	font-weight:500;
+	}
+
+.SVGInfo {
+		margin: 0 auto;
+		text-align: left;
+		line-height: 1.7em;
+	}
+
+#draw-basin,
+#highlight-user-2,
+#mead-info-1,
+#mead-info-2,
+#mead-info-3,
+#mead-info-4,
+#mead-info-5,
+#mead-info-6{
+	display:none;
+	}
+
+#meadAnimatedContainer {
+	max-width: 950px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.SVGInfo p{
+	margin-bottom:10px;
+	}
+/*IE SVG width fix*/	
+#mead-object,
+#mead-elev-object,
+#animated-object,
+#droughtMovingAvg-object,
+#utah,
+#bluedragon-object,
+#co-basin-object{
+	width:100%;
+	}
+
+/*=====Last Section CSS=====*/
+#openWater{
+	margin-top:50px;
+	}
+
+#collaboratorsCredit{
+	min-height:100px;
+	margin:20px 0 0 0;
+	}
+
+#collaboratorsCredit h2{
+	text-align:left;
+	color:#000;
+	font-weight:300;
+	margin-bottom:10px;
+	}
+
+#first{
+	margin-left:0;
+	}
+
+.collaborator{
+	background:#B2B2B2;
+	height:100px;
+	margin:0 0 10px 0;
+	text-align:center;
+	}
+	
+#creditLogosTop img,
+#creditLogosBottom img{
+	width:20%;
+	margin:0 10px 10px 0;
+	alignment-baseline:middle;
+	}
+	
+
+	
+@media only screen 
+	and (min-device-width: 320px)
+	and (max-device-width: 480px)
+	and (-webkit-min-device-pixel-ratio: 2){
+		.navBox{
+			width:9.08%;
+			}
+			
+		.keynote{
+			top:35% !important;
+			}
+		}
+
+@media screen and (min-width: 520px){
+	/*=====Basin Divided CSS=====*/
+
+	#blueDragonExplore{
+		margin-top:100px !important;
+		}
+
+	#blueDragonExplore,
+	#basinExplore,
+	#dygraphExtra{
+		width:50%;
+		margin:0 auto;
+	}
+	
+	/*US Drought Section CSS*/
+	#usdroughtgifexplore{
+		width:50%;
+		}
+		
+	#lakeMeadAnimatedExtra{
+		width:50%;
+		}
+
+
+}
+
+@media screen and (min-width: 687px) {
+	nav {
+		margin-top: 1px;
+		padding: 1px 5px;
+		height: 28px;
+	}
+
+	#scrollDownArrow{
+		bottom:250px;
+	}
+
+	#welcomeSocial{
+		right:35px;
+	}
+	
+	.socialMedia{
+		right:10px;
+		}
+	
+	.onWhite{
+		right:0;
+		top:-80px;
+	}
+	/*======Container CSS======*/
+
+	.container {
+		margin:0 0 100px 0;
+		padding: 50px;
+	}
+	
+	#Introduction,
+	#Lifeline,
+	#ControlStructures,
+	#StorageCapacity,
+	#SupplyDemand,
+	#OneRiver,
+	#DecliningStorage,
+	#Shortage,
+	#EraOfHope,
+	#ExtendedDrought,
+	#WaterSupply{
+		-webkit-background-size: cover;
+		background-attachment: fixed;
+	}
+	#Introduction {
+		background-image: url('../img/keynotes/welcome.jpg');
+	}
+	#Lifeline {
+		background-image: url('../img/keynotes/keynote2.jpg');
+	}
+	#ControlStructures {
+		background-image: url('../img/keynotes/keynote3.jpg');
+	}
+	#StorageCapacity {
+		background-image: url('../img/keynotes/keynote4.jpg');
+	}
+	#WaterSupply {
+		background-image: url('../img/keynotes/waterSupplyVariable.jpg');
+	}
+	#ExtendedDrought {
+		background-image: url('../img/keynotes/drydirt.jpg');
+	}
+	#SupplyDemand {
+		background-image: url('../img/keynotes/keynote5.jpg');
+	}
+	#OneRiver {
+		background-image: url('../img/keynotes/oneRiverTwoParts.jpg');
+	}
+	#DecliningStorage {
+		background-image: url('../img/keynotes/keynote7.jpg');
+	}
+	#Shortage {
+		background-image: url('../img/keynotes/keynote8.jpg');
+	}
+	#EraOfHope {
+		background-image: url('../img/keynotes/keynote9.jpg');
+	}
+
+	/*======keynote CSS======*/
+
+	.keynote {
+		top: 35%;
+	}
+	.keynote h1,
+	.keynote h2 {
+		font-weight: 100;
+	}
+	.keynote h1 {
+		font-size: 5vw;
+		margin-bottom: 5px;
+	}
+	.keynote h2 {
+		font-size: 4vw;
+	}
+	#keynote2 h2 {
+		margin-top: 100px;
+	}
+
+	/*======supporting info CSS======*/
+
+	.supportinginfo{
+		margin-bottom:100px;
+		}
+		
+	.supportingInfoContent{
+		margin-top:-50px;
+		}
+
+	/*======Content CSS======*/
+
+	.sectionContent {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.sectionContent h2{
+		font-size:1.3em;
+		}
+
+
+	/*======Water Usage Section CSS======*/
+
+	#JrGraph h2 {
+		font-size: 1.5em;
+	}
+	text {
+		font-size: 1em !important;
+	}
+
+	/*======Before After Section CSS======*/
+
+	#before-after-section figure{
+		margin-top:50px;
+		}
+	
+	/*======Lake Mead Animated Section CSS======*/
+
+	#natural-flow-graph {
+		width: 80%;
+		height: 600px;
+	}
+	.collaborator{
+		width:32.6%;
+		float:left;
+		margin-left:1%;
+	}
+}
+
+@media only screen
+	and (min-device-width: 768px)
+	and (max-device-width: 1024px)
+	and (-webkit-min-device-pixel-ratio: 1){
+		#Introduction,
+		#Lifeline,
+		#ControlStructures,
+		#StorageCapacity,
+		#SupplyDemand,
+		#OneRiver,
+		#DecliningStorage,
+		#Shortage,
+		#EraOfHope,
+		#ExtendedDrought,
+		#WaterSupply{
+			background-attachment: scroll !important;
+		}
+		
+		#scrollDownArrow{
+			bottom:200px;
+			}
+
+		}
+
+@media screen and (min-width: 768px){
+	#animated-object{
+		display:block;
+	}
+
+	#animated-object-mobile{
+		display:none;
+	}
+
+	#mead-elev-object{
+		display:block;
+		}
+
+	#mead-elev-object-mobile{
+		display:none;
+		}
+		
+	#mead-object{
+		display:block;
+		}
+		
+	#mead-object-mobile{
+		display:none;
+		}
+
+	#utah{
+		margin-top:100px;
+		}
+
+		
+	#creditLogosTop img,
+	#creditLogosBottom img{
+		width:20%;
+	}
+	
+	#doi,
+	#epa{
+		width:15% !important;
+		}
+		
+	#osu{
+		width:12% !important;
+		}
+		
+	#wswc{
+		width:10% !important;
+		}
+}
+
+@media screen and (min-width: 1025px) {
+
+	#stickynav{
+		width:960px;
+		margin:0 auto;
+		height:60px;
+	}
+
+	.navLink:hover{
+		background:#fff;
+		color:#003366 !important;
+		cursor:pointer;
+		text-decoration:none;
+		}
+
+	.navBox:hover .navToolTip{
+		display:block !important;
+	}
+
+	.navToolTip{
+		background:rgb(220,220,220);
+		padding:10px;
+		position:absolute;
+		bottom:-55px;
+	}
+
+	.navToolTip:after{
+		content:"";
+		width: 0;
+		height: 0;
+		position:absolute;
+		top:-5px;
+		left:10px;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 5px solid rgb(220,220,220);
+	}
+
+	/*Social Media CSS*/
+
+	.takeLink,
+	.takeLinkBlue{
+		right:30px;
+		top:70px
+	}
+
+	.takeLink:after,
+	.takeLinkBlue:after{
+		top:50%;
+		right:-7px;
+		transform: rotate(90deg);
+	}
+	
+	.socialMedia{
+		width:25px;
+		}
+
+	.socialMedia img{
+		display:block;
+		float:none;
+		margin-bottom:20px;
+		}
+
+	/*======keynote CSS======*/
+
+	.keynote {
+		width: 960px;
+	}
+	.keynote h1 {
+		font-size: 2em;
+	}
+	.keynote h2 {
+		font-size: 1.9em;
+	}
+
+	/*======Section Content CSS======*/
+	.sectionContent {
+		width: 900px;
+	}
+	.sectionContent h3 {
+		font-size: 1.6em;
+	}
+
+	.graphCaption{
+		margin:0 auto 10px auto;
+		}
+
+	.supportinginfo:hover{
+	background: #003366;
+	color: #fff;
+	}
+
+	/*======Photo Panel CSS======*/
+
+	#photoPanel img{
+		width:33%;
+		}
+
+	/*======Blue Dragon Section CSS======*/
+
+	#blueDragon{
+		width:800px;
+		margin:20px auto 20px 0;
+		}
+
+	#blueDragonSection{
+		position:relative;
+		}
+
+	#dragonText{
+		position:absolute;
+		top:800px;
+		right:0;
+		width:200px;
+		}
+
+	#blueDragonExplore{
+		width:50%;
+		margin:20px auto;
+		}
+
+	/*======dygraph Section CSS======*/
+	
+	#usdroughtgifexplore{
+		width:40%;
+		}
+
+	#natural-flow-graph{
+		width:100% !important;
+		margin:0 auto 20px 0;
+		margin-left:-10px;
+		}
+
+	#dygraphExtra{
+		width:50%;
+		margin:100px auto !important;
+		}
+
+	/*======app-explanation CSS======*/
+
+
+
+
+	/*======Water Usage Section CSS======*/
+
+	#basinReservoirContainer{
+		margin-bottom: 100px;
+	}
+
+	#black-white-images{
+		margin-top:100px;
+		}
+
+	#JrGraph {
+		width: 900px;
+		margin: 0 auto;
+	}
+
+	/*======before after Section CSS======*/
+
+	.extraPics img{
+		width:33%;
+	}
+
+	/*=====lake mead animated===*/
+
+	#lakeMeadAnimatedExtra{
+		width:60%;
+		margin:100px auto !important;
+		}
+
+}

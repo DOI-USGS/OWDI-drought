@@ -1,0 +1,34 @@
+pipeline {
+    agent {
+        node {
+            label 'team:makerspace-small'
+        }
+    } 
+    stages {
+        stage('Checkout repo') {
+            steps {
+                sh 'wget -O DOIRootCA2.cer http://sslhelp.doi.net/docs/DOIRootCA2.cer'
+                git "https://github.com/USGS-VIZLAB/OWDI-Drought"
+            }
+        }
+        stage('send to S3') {
+            steps {
+                script {
+                    if ("${params.BUILD_DEST}" == "prod") {
+                        targetDomain = "s3://water-visualizations-prod-website/visualizations/OWDI-Drought"
+                    }
+                    else if ("${params.BUILD_DEST}" == "beta") {
+                        targetDomain = "s3://water-visualizations-beta-website/visualizations/OWDI-Drought"
+                    }
+                    else {
+                        targetDomain = "s3://water-visualizations-test-website/visualizations/OWDI-Drought"
+                    }
+                }
+                sh """
+                    aws s3 rm "${targetDomain}" --recursive
+                    aws s3 cp "$WORKSPACE" "${targetDomain}" --recursive
+                """
+            }
+        }
+    }
+}

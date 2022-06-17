@@ -1,0 +1,137 @@
+/*=====SVG CSS=====*/
+#wholeRiver:hover > g{
+	opacity: 0.2;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	-o-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+
+#wholeRiver:hover > g:hover{
+	opacity: 1.0;
+	-webkit-transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.water {
+	color: #1E628C;
+	fill: #1E628C;
+}
+
+.footprint {
+	color: #FFFFFF;
+	opacity: 0.0;
+}
+
+text {
+	cursor: default;
+	font-family: Roboto, Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.riverGroup {
+	-webkit-transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+
+
+}
+
+.riverGroup:hover {
+	-webkit-transition: 1s ease-in-out;
+	-moz-transition: 1s ease-in-out;
+	-o-transition: 1s ease-in-out;
+	transition: 1s ease-in-out;
+}
+
+.bbox {
+	visibility: visible;
+	stroke-alignment: outer;
+	stroke-width: 24;
+	fill: none;
+	stroke: #1975d1;
+	stroke-opacity: 0.6;
+}
+
+.bboxHidden {
+	visibility: hidden;
+}
+
+#hooverGroup:hover{
+	transform: translate(-850px, 0px) scale(3);
+	-ms-transform: translate(-850px, 0px) scale(3);
+	-webkit-transform: translate(-850px, 0px) scale(3);
+	-moz-transform: translate(-850px, 0px) scale(3);
+}
+
+#davisGroup:hover {
+	transform: translate(-900px, -180px) scale(3);
+	-ms-transform: translate(-900px, -180px) scale(3);
+	-webkit-transform: translate(-900px, -180px) scale(3);
+	-moz-transform: translate(-900px, -180px) scale(3);
+}
+
+#davisParkerGroup:hover {
+	transform: translate(-1540px, -570px) scale(4);
+	-ms-transform: translate(-1540px, -570px) scale(4);
+	-webkit-transform: translate(-1540px, -570px) scale(4);
+	-moz-transform: translate(-1540px, -570px) scale(4);
+}
+
+#parkerGroup:hover {
+	transform: translate(-1190px, -400px) scale(3);
+	-ms-transform: translate(-1190px, -400px) scale(3);
+	-webkit-transform: translate(-1190px, -400px) scale(3);
+	-moz-transform: translate(-1190px, -400px) scale(3);
+}
+
+#headgateGroup:hover {
+	transform: translate(-1000px, -580px) scale(3);
+	-ms-transform: translate(-1000px, -580px) scale(3);
+	-webkit-transform: translate(-1000px, -580px) scale(3);
+	-moz-transform: translate(-1000px, -580px) scale(3);
+}
+
+#paloVerdeGroup:hover {
+	transform: translate(-950px, -780px) scale(3);
+	-ms-transform: translate(-950px, -780px) scale(3);
+	-webkit-transform: translate(-950px, -780px) scale(3);
+	-moz-transform: translate(-950px, -780px) scale(3);
+}
+
+#outwashGroup:hover {
+	transform: translate(-830px, -850px) scale(3);
+	-ms-transform: translate(-830px, -850px) scale(3);
+	-webkit-transform: translate(-830px, -850px) scale(3);
+	-moz-transform: translate(-830px, -850px) scale(3);
+}
+
+#imperialGroup:hover {
+	transform: translate(-920px, -980px) scale(3);
+	-ms-transform: translate(-920px, -980px) scale(3);
+	-webkit-transform: translate(-920px, -980px) scale(3);
+	-moz-transform: translate(-920px, -980px) scale(3);
+}
+
+#morelosGroup:hover {
+	transform: translate(-120px, -640px) scale(1.75);
+	-ms-transform: translate(-120px, -640px) scale(1.75);
+	-webkit-transform: translate(-120px, -640px) scale(1.75);
+	-moz-transform: translate(-120px, -640px) scale(1.75);
+}
+
+#easternGroup:hover {
+	transform: translate(-1020px, -1160px) scale(3);
+	-ms-transform: translate(-1020px, -1160px) scale(3);
+	-webkit-transform: translate(-1020px, -1160px) scale(3);
+	-moz-transform: translate(-1020px, -1160px) scale(3);
+}
+
+#saltonGroup:hover {
+	transform: translate(0px, -1240px) scale(3);
+	-ms-transform: translate(0px, -1240px) scale(3);
+	-webkit-transform: translate(0px, -1240px) scale(3);
+	-moz-transform: translate(0px, -1240px) scale(3);
+}

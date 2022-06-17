@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" lang="es">
+    <head>
+        <meta charset="utf-8" />
+       
+	<!-- VERSION: 1.1.0 -->
+
+ 
+        <!-- ############### VIEWPORT META TAG ############### -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1,   user-scalable=no" />
+
+        <!-- RDFa Tags - http://ogp.me/ -->
+        <meta property="og:title" content="Sequía OWDI" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.doi.gov/water/owdi.cr.drought/ es" />
+        <meta property="og:image:url" content="https://www.doi.gov/water/owdi.cr.drought/ img/thumbnail.png" />
+        <meta property="og:image:height" content="894" />
+        <meta property="og:image:width" content="761" />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:description" content="Le invitamos a utilizar esta visualización interactiva para aprender sobre la importancia del Río Colorado, los impactos de la sequía actual, y las formas en que la sequía se está gestionando en la Cuenca." />
+        <meta property="og:locale" content="es_MX" />
+
+        <title>Sequía OWDI</title>
+        <link rel="icon" href="../img/doi.ico" type="image/x-icon" />
+        <link href="../css/overlay.css?version=1.1.0" rel="stylesheet" type="text/css">
+        <link href="../css/doi.css?version=1.1.0" rel="stylesheet" type="text/css">
+        <link href="../css/main.css?version=1.1.0" rel="stylesheet" type="text/css">
+        <link href="../css/normalize.css?version=1.1.0" rel="stylesheet" type="text/css">
+	<link href="../css/svg.css?version=1.1.0" rel="stylesheet" type="text/css">
+        <link href="../css/print.css?version=1.1.0" rel="stylesheet" type="text/css">
+        <link href="../css/before-after.css?version=1.1.0" rel="stylesheet" type="text/css">
+        <link href="../css/dygraph.css?version=1.1.0" rel="stylesheet" type="text/css">
+        <link href="//fonts.googleapis.com/css?family=Roboto:400,500,700,100,300" rel="stylesheet" type="text/css">
+
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "WebSite",
+			"headline": "Sequía en la Cuenca del Río Colorado",
+			"alternateHeadline": "Sequía en la Cuenca del Río Colorado Perspectivas utilizando datos abiertos",
+			"about": "Le invitamos a utilizar esta visualización interactiva para aprender sobre la importancia del Río Colorado, los impactos de la sequía actual, y las formas en que la sequía se está gestionando en la Cuenca.",
+			"datePublished": "2015-12-15",
+			"educationalUse": "Recurso didáctico, mapa, lección ",
+			"accountablePerson": {
+				"@context": "http://schema.org",
+				"@type": "Person",
+				"name": "Emily Read",
+				"email": "eread@usgs.gov",
+				"affiliation": {
+					"@context": "http://schema.org",
+					"@type": "Organization",
+					"legalName": "Servicio Geológico de los Estados Unidos"
+				}
+			},
+			"audience": {
+				"@context": "http://schema.org",
+				"@type": "Audience",
+				"audienceType": "Ciudadanos, usuarios del agua, administradores de recursos, estudiantes, creadores de políticas, científicos, científicos informáticos y de datos."
+			},
+			"author": {
+				"@context": "http://schema.org",
+                                "@type": "Organization",
+                                "legalName": "Departamento del Interior de Estados Unidos"
+			},
+			"editor": {
+				"@context": "http://schema.org",
+				"@type": "Person",
+                                "name": "Sandra Cooper",
+                                "affiliation": {
+                                        "@context": "http://schema.org",
+                                        "@type": "Organization",
+                                        "legalName": "Servicio Geológico de los Estados Unidos"
+                                }
+			},
+			"keywords": "Sequía, agua, datos, software, visualizaciones, colaboración, ciencia de datos, Río Colorado, occidente de EE.UU., suministro de agua, agricultura, generación hidroeléctrica, asignaciones ",
+			"isPartOf": "https://www.doi.gov/water/ "
+		}
+	</script>
+		
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-66155743-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script>
+		$(document).on('mobileinit', function () {
+			$.mobile.hideUrlBar = false;
+		});
+	</script>
+	<script type="text/javascript" src="//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="../js/init.js?version=1.1.0"></script>
+    </head>
+
+    <body>
+
+        <!-- Main content -->
+        <span id="application">
+		
+		<div id="doiHeaderContainer">
+			<section id="doiHeader">
+			<div class="widget">
+				
+				<header class="l-header" role="banner">
+			      <div class="l-region l-region--showcase">
+			    <div id="block-views-interior-places-block" class="block block--views block--views-interior-places-block">
+			        <div class="block__content">
+			    <div class="view view-interior-places view-id-interior_places view-display-id-block view-dom-id-4a6a6f8c66cbf1100dd6702a046ce121">
+			        
+			  
+			  
+			      
+			    <div class="view-content">
+			      <div id="flexslider-1" class="flexslider flexslider-processed">
+			  <ul class="slides"><li class="flex-active-slide" data-thumb-alt="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 1; display: block; z-index: 2;"><article about="/arches-national-park" typeof="sioc:Item foaf:Document" role="article" class="node node--interior-place node-teaser node--teaser node--interior-place--teaser">
+			      <header>
+			                  <span property="dc:title" content="Arches National Park" class="rdf-meta element-hidden"></span>    </header>
+			  
+			  
+			  <div class="node__content">
+			    <div class="field field--name-field-interior-place-photo field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://www.doi.gov/sites/doi.gov/files/styles/interior_place_photo/public/interior-place/photos/winter-arches-national-park.jpg?itok=GVIu1P9w" width="1280" height="368" alt="Arches National Park in winter" draggable="false"></div></div></div><div class="info group-photo-info field-group-div"><div class="field field--name-field-caption field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><p>Visit Arches and discover a landscape of contrasting colors, landforms and textures unlike any other in the world. The park has over 2,000 natural stone arches, in addition to hundreds of soaring pinnacles, massive fins and giant balanced rocks. This red rock wonderland will amaze you with its formations, refresh you with its trails, and inspire you with its sunsets.</p>
+			</div></div></div><div class="doi-gov-social-widget">
+			  <a href="#" rel="external" class="share-trigger">Share</a>
+			  <div class="share-links">
+			    <ul><li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.doi.gov/arches-national-park" rel="external" class="doi-share-link facebook" target="_blank" data-label="Facebook" onclick="" data-hasqtip="0" oldtitle="Share on Facebook" title="">Facebook</a></li>
+			<li><a href="http://twitter.com/intent/tweet?via=interior&amp;url=https://www.doi.gov/arches-national-park&amp;text=Arches National Park" rel="external" class="doi-share-link twitter" target="_blank" data-label="Twitter" onclick="" data-hasqtip="1" oldtitle="Share on Twitter" title="">Twitter</a></li>
+			<li><a href="https://plus.google.com/share?url=https://www.doi.gov/arches-national-park" rel="external" class="doi-share-link google" target="_blank" data-label="Google+" onclick="" data-hasqtip="2" oldtitle="Share on Google+" title="">Google+</a></li>
+			<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.doi.gov/arches-national-park&amp;title=Arches National Park" rel="external" class="doi-share-link linkedin" target="_blank" data-label="LinkedIn" onclick="" data-hasqtip="3" oldtitle="Share on LinkedIn" title="">LinkedIn</a></li>
+			<li><a href="https://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url=https://www.doi.gov/arches-national-park&amp;title=Arches National Park" rel="external" class="doi-share-link delicious" target="_blank" data-label="Delicious" onclick="" data-hasqtip="4" oldtitle="Share on Delicious" title="">Delicious</a></li>
+			<li><a href="http://digg.com/submit?&amp;url=https://www.doi.gov/arches-national-park&amp;title=Arches National Park" rel="external" class="doi-share-link digg" target="_blank" data-label="Digg" onclick="" data-hasqtip="5" oldtitle="Share on Digg" title="">Digg</a></li>
+			<li><a href="http://reddit.com/submit?&amp;url=https://www.doi.gov/arches-national-park&amp;title=Arches National Park" rel="external" class="doi-share-link reddit" target="_blank" data-label="Reddit" onclick="" data-hasqtip="6" oldtitle="Share on Reddit" title="">Reddit</a></li>
+			<li><a href="http://www.stumbleupon.com/submit?url=https://www.doi.gov/arches-national-park&amp;title=Arches National Park" rel="external" class="doi-share-link stumbleupon" target="_blank" data-label="StumbleUpon" onclick="" data-hasqtip="7" oldtitle="Share on StumbleUpon" title="">StumbleUpon</a></li>
+			<li><a href="http://pinterest.com/pin/create/button/?url=https://www.doi.gov/arches-national-park&amp;title=Arches National Park" rel="external" class="doi-share-link pinterest" target="_blank" data-label="Pinterest" onclick="" data-hasqtip="8" oldtitle="Share on Pinterest" title="">Pinterest</a></li>
+			</ul>  </div>
+			</div>
+			<div class="close-box">x</div></div><button title="Show more info about this image">View info</button>  </div>
+			
+			    </article>
+			</li>
+			<li data-thumb-alt="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><article about="/endangered-hawksbill-0" typeof="sioc:Item foaf:Document" role="article" class="node node--interior-place node-teaser node--teaser node--interior-place--teaser">
+			      <header>
+			                  <span property="dc:title" content="An endangered hawksbill" class="rdf-meta element-hidden"></span>    </header>
+			  
+			  
+			  <div class="node__content">
+			    <div class="field field--name-field-interior-place-photo field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://www.doi.gov/sites/doi.gov/files/styles/interior_place_photo/public/interior-place/photos/hawksbill.jpg?itok=KnE9WrWw" width="1280" height="368" alt="Endangered Hawksbill" draggable="false"></div></div></div><div class="info group-photo-info field-group-div"><div class="field field--name-field-caption field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><p>An endangered hawksbill (Eretmochelys imbricata) swimming over a colony of elkhorn coral (Acropora palmata).</p>
+			</div></div></div><div class="doi-gov-social-widget">
+			  <a href="#" rel="external" class="share-trigger">Share</a>
+			  <div class="share-links">
+			    <ul><li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.doi.gov/endangered-hawksbill-0" rel="external" class="doi-share-link facebook" target="_blank" data-label="Facebook" onclick="" data-hasqtip="9" oldtitle="Share on Facebook" title="">Facebook</a></li>
+			<li><a href="http://twitter.com/intent/tweet?via=interior&amp;url=https://www.doi.gov/endangered-hawksbill-0&amp;text=An endangered hawksbill" rel="external" class="doi-share-link twitter" target="_blank" data-label="Twitter" onclick="" data-hasqtip="10" oldtitle="Share on Twitter" title="">Twitter</a></li>
+			<li><a href="https://plus.google.com/share?url=https://www.doi.gov/endangered-hawksbill-0" rel="external" class="doi-share-link google" target="_blank" data-label="Google+" onclick="" data-hasqtip="11" oldtitle="Share on Google+" title="">Google+</a></li>
+			<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.doi.gov/endangered-hawksbill-0&amp;title=An endangered hawksbill" rel="external" class="doi-share-link linkedin" target="_blank" data-label="LinkedIn" onclick="" data-hasqtip="12" oldtitle="Share on LinkedIn" title="">LinkedIn</a></li>
+			<li><a href="https://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url=https://www.doi.gov/endangered-hawksbill-0&amp;title=An endangered hawksbill" rel="external" class="doi-share-link delicious" target="_blank" data-label="Delicious" onclick="" data-hasqtip="13" oldtitle="Share on Delicious" title="">Delicious</a></li>
+			<li><a href="http://digg.com/submit?&amp;url=https://www.doi.gov/endangered-hawksbill-0&amp;title=An endangered hawksbill" rel="external" class="doi-share-link digg" target="_blank" data-label="Digg" onclick="" data-hasqtip="14" oldtitle="Share on Digg" title="">Digg</a></li>
+			<li><a href="http://reddit.com/submit?&amp;url=https://www.doi.gov/endangered-hawksbill-0&amp;title=An endangered hawksbill" rel="external" class="doi-share-link reddit" target="_blank" data-label="Reddit" onclick="" data-hasqtip="15" oldtitle="Share on Reddit" title="">Reddit</a></li>
+			<li><a href="http://www.stumbleupon.com/submit?url=https://www.doi.gov/endangered-hawksbill-0&amp;title=An endangered hawksbill" rel="external" class="doi-share-link stumbleupon" target="_blank" data-label="StumbleUpon" onclick="" data-hasqtip="16" oldtitle="Share on StumbleUpon" title="">StumbleUpon</a></li>
+			<li><a href="http://pinterest.com/pin/create/button/?url=https://www.doi.gov/endangered-hawksbill-0&amp;title=An endangered hawksbill" rel="external" class="doi-share-link pinterest" target="_blank" data-label="Pinterest" onclick="" data-hasqtip="17" oldtitle="Share on Pinterest" title="">Pinterest</a></li>
+			</ul>  </div>
+			</div>
+			<div class="close-box">x</div></div><button title="Show more info about this image">View info</button>  </div>
+			
+			    </article>
+			</li>
+			<li data-thumb-alt="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><article about="/new-river-gorge-nr" typeof="sioc:Item foaf:Document" role="article" class="node node--interior-place node-teaser node--teaser node--interior-place--teaser">
+			      <header>
+			                  <span property="dc:title" content="New River Gorge NR" class="rdf-meta element-hidden"></span>    </header>
+			  
+			  
+			  <div class="node__content">
+			    <div class="field field--name-field-interior-place-photo field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://www.doi.gov/sites/doi.gov/files/styles/interior_place_photo/public/interior-place/photos/New-River-Gorge-NR-by-Adam-Jewell.jpg?itok=VSI2nKIr" width="1280" height="368" alt="Photo of Sandstone Falls -- the largest waterfall on the New River -- by Adam Jewell (www.sharetheexperience.org)" title="New River Gorge National River, West Virginia" draggable="false"></div></div></div><div class="info group-photo-info field-group-div"><div class="field field--name-field-caption field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><p>A rugged, whitewater river flowing northward through deep canyons, the New River is among the oldest rivers on the continent. New River Gorge National River in West Virginia encompasses over 70,000 acres of land along the New River, is rich in cultural and natural history, and offers an abundance of scenic and recreational opportunities.</p>
+			</div></div></div><div class="doi-gov-social-widget">
+			  <a href="#" rel="external" class="share-trigger">Share</a>
+			  <div class="share-links">
+			    <ul><li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.doi.gov/new-river-gorge-nr" rel="external" class="doi-share-link facebook" target="_blank" data-label="Facebook" onclick="" data-hasqtip="18" oldtitle="Share on Facebook" title="">Facebook</a></li>
+			<li><a href="http://twitter.com/intent/tweet?via=interior&amp;url=https://www.doi.gov/new-river-gorge-nr&amp;text=New River Gorge NR" rel="external" class="doi-share-link twitter" target="_blank" data-label="Twitter" onclick="" data-hasqtip="19" oldtitle="Share on Twitter" title="">Twitter</a></li>
+			<li><a href="https://plus.google.com/share?url=https://www.doi.gov/new-river-gorge-nr" rel="external" class="doi-share-link google" target="_blank" data-label="Google+" onclick="" data-hasqtip="20" oldtitle="Share on Google+" title="">Google+</a></li>
+			<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.doi.gov/new-river-gorge-nr&amp;title=New River Gorge NR" rel="external" class="doi-share-link linkedin" target="_blank" data-label="LinkedIn" onclick="" data-hasqtip="21" oldtitle="Share on LinkedIn" title="">LinkedIn</a></li>
+			<li><a href="https://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url=https://www.doi.gov/new-river-gorge-nr&amp;title=New River Gorge NR" rel="external" class="doi-share-link delicious" target="_blank" data-label="Delicious" onclick="" data-hasqtip="22" oldtitle="Share on Delicious" title="">Delicious</a></li>
+			<li><a href="http://digg.com/submit?&amp;url=https://www.doi.gov/new-river-gorge-nr&amp;title=New River Gorge NR" rel="external" class="doi-share-link digg" target="_blank" data-label="Digg" onclick="" data-hasqtip="23" oldtitle="Share on Digg" title="">Digg</a></li>
+			<li><a href="http://reddit.com/submit?&amp;url=https://www.doi.gov/new-river-gorge-nr&amp;title=New River Gorge NR" rel="external" class="doi-share-link reddit" target="_blank" data-label="Reddit" onclick="" data-hasqtip="24" oldtitle="Share on Reddit" title="">Reddit</a></li>
+			<li><a href="http://www.stumbleupon.com/submit?url=https://www.doi.gov/new-river-gorge-nr&amp;title=New River Gorge NR" rel="external" class="doi-share-link stumbleupon" target="_blank" data-label="StumbleUpon" onclick="" data-hasqtip="25" oldtitle="Share on StumbleUpon" title="">StumbleUpon</a></li>
+			<li><a href="http://pinterest.com/pin/create/button/?url=https://www.doi.gov/new-river-gorge-nr&amp;title=New River Gorge NR" rel="external" class="doi-share-link pinterest" target="_blank" data-label="Pinterest" onclick="" data-hasqtip="26" oldtitle="Share on Pinterest" title="">Pinterest</a></li>
+			</ul>  </div>
+			</div>
+			<div class="close-box">x</div></div><button title="Show more info about this image">View info</button>  </div>
+			
+			    </article>
+			</li>
+			<li data-thumb-alt="" style="width: 100%; float: left; margin-right: -100%; position: relative; opacity: 0; display: block; z-index: 1;"><article about="/denali-national-park-and-reserve" typeof="sioc:Item foaf:Document" role="article" class="node node--interior-place node-teaser node--teaser node--interior-place--teaser">
+			      <header>
+			                  <span property="dc:title" content="Denali National Park and Reserve" class="rdf-meta element-hidden"></span>    </header>
+			  
+			  
+			  <div class="node__content">
+			    <div class="field field--name-field-interior-place-photo field--type-image field--label-hidden"><div class="field__items"><div class="field__item even"><img typeof="foaf:Image" src="https://www.doi.gov/sites/doi.gov/files/styles/interior_place_photo/public/interior-place/photos/Denali-National-Park-and-Reserve.jpg?itok=Gdy5ZTOt" width="1280" height="368" alt="Hikers view the Denali landscape" draggable="false"></div></div></div><div class="info group-photo-info field-group-div"><div class="field field--name-field-caption field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><p>Denali is six million acres of wild land, bisected by one ribbon of road. Travelers along it see the relatively low-elevation taiga forest give way to high alpine tundra and snowy mountains, culminating in North America's tallest peak, 20,310' Denali. Wild animals large and small roam un-fenced lands, living as they have for ages. Solitude, tranquility and wilderness await.</p>
+			</div></div></div><div class="doi-gov-social-widget">
+			  <a href="#" rel="external" class="share-trigger">Share</a>
+			  <div class="share-links">
+			    <ul><li><a href="http://www.facebook.com/sharer/sharer.php?u=https://www.doi.gov/denali-national-park-and-reserve" rel="external" class="doi-share-link facebook" target="_blank" data-label="Facebook" onclick="" data-hasqtip="27" oldtitle="Share on Facebook" title="">Facebook</a></li>
+			<li><a href="http://twitter.com/intent/tweet?via=interior&amp;url=https://www.doi.gov/denali-national-park-and-reserve&amp;text=Denali National Park and Reserve" rel="external" class="doi-share-link twitter" target="_blank" data-label="Twitter" onclick="" data-hasqtip="28" oldtitle="Share on Twitter" title="">Twitter</a></li>
+			<li><a href="https://plus.google.com/share?url=https://www.doi.gov/denali-national-park-and-reserve" rel="external" class="doi-share-link google" target="_blank" data-label="Google+" onclick="" data-hasqtip="29" oldtitle="Share on Google+" title="">Google+</a></li>
+			<li><a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://www.doi.gov/denali-national-park-and-reserve&amp;title=Denali National Park and Reserve" rel="external" class="doi-share-link linkedin" target="_blank" data-label="LinkedIn" onclick="" data-hasqtip="30" oldtitle="Share on LinkedIn" title="">LinkedIn</a></li>
+			<li><a href="https://delicious.com/save?v=5&amp;noui&amp;jump=close&amp;url=https://www.doi.gov/denali-national-park-and-reserve&amp;title=Denali National Park and Reserve" rel="external" class="doi-share-link delicious" target="_blank" data-label="Delicious" onclick="" data-hasqtip="31" oldtitle="Share on Delicious" title="">Delicious</a></li>
+			<li><a href="http://digg.com/submit?&amp;url=https://www.doi.gov/denali-national-park-and-reserve&amp;title=Denali National Park and Reserve" rel="external" class="doi-share-link digg" target="_blank" data-label="Digg" onclick="" data-hasqtip="32" oldtitle="Share on Digg" title="">Digg</a></li>
+			<li><a href="http://reddit.com/submit?&amp;url=https://www.doi.gov/denali-national-park-and-reserve&amp;title=Denali National Park and Reserve" rel="external" class="doi-share-link reddit" target="_blank" data-label="Reddit" onclick="" data-hasqtip="33" oldtitle="Share on Reddit" title="">Reddit</a></li>
+			<li><a href="http://www.stumbleupon.com/submit?url=https://www.doi.gov/denali-national-park-and-reserve&amp;title=Denali National Park and Reserve" rel="external" class="doi-share-link stumbleupon" target="_blank" data-label="StumbleUpon" onclick="" data-hasqtip="34" oldtitle="Share on StumbleUpon" title="">StumbleUpon</a></li>
+			<li><a href="http://pinterest.com/pin/create/button/?url=https://www.doi.gov/denali-national-park-and-reserve&amp;title=Denali National Park and Reserve" rel="external" class="doi-share-link pinterest" target="_blank" data-label="Pinterest" onclick="" data-hasqtip="35" oldtitle="Share on Pinterest" title="">Pinterest</a></li>
+			</ul>  </div>
+			</div>
+			<div class="close-box">x</div></div><button title="Show more info about this image">View info</button>  </div>
+			
+			    </article>
+			</li>
+			</ul><ol class="flex-control-nav flex-control-paging"><li><a href="#" rel="external" class="flex-active">1</a></li><li><a href="#" rel="external">2</a></li><li><a href="#" rel="external">3</a></li><li><a href="#" rel="external">4</a></li></ol><ul class="flex-direction-nav"><li class="flex-nav-prev"><a class="flex-prev" href="#" rel="external">Previous</a></li><li class="flex-nav-next"><a class="flex-next" href="#" rel="external">Next</a></li></ul></div>
+			    </div>
+			  
+			  
+			  
+			  
+			  
+			  
+			</div>  </div>
+			</div>
+			  </div>
+			      <div class="l-region l-region--header">
+			    <div id="block-panels-mini-doi-header" class="block block--panels-mini block--panels-mini-doi-header">
+			        <div class="block__content">
+			    <div class="one-column panels-container" id="mini-panel-doi_header">
+			  
+			      <div class="main one-column--main">
+			      <div class="panel-pane pane-page-logo">
+			            <a href="/" rel="external" id="logo" title="Home"><img src="https://www.doi.gov/sites/doi.gov/themes/custom/doi_gov/logo.png" alt="Home"></a>    </div>
+			<div class="panel-pane pane-custom pane-1 pane-page-site-name">
+			            <p><a href="/" rel="external">U.S. Department of the Interior</a></p>
+			    </div>
+			<div class="panel-pane pane-block pane-menu-menu-social">
+			            <ul class="menu"><li class="first leaf"><a href="https://instagram.com/usinterior" rel="external" onclick="" data-hasqtip="36" oldtitle="DOI on Instagram" title="" aria-describedby="qtip-36">Instagram</a></li>
+			<li class="leaf"><a href="https://www.facebook.com/USInterior" rel="external" onclick="" data-hasqtip="37" oldtitle="DOI on Facebook" title="" aria-describedby="qtip-37">Facebook</a></li>
+			<li class="leaf"><a href="https://twitter.com/interior" rel="external" onclick="" data-hasqtip="38" oldtitle="DOI on Twitter" title="">Twitter</a></li>
+			<li class="leaf"><a href="http://americasgreatoutdoors.tumblr.com/" rel="external" onclick="" data-hasqtip="39" oldtitle="DOI on Tumblr" title="" aria-describedby="qtip-39">Tumblr</a></li>
+			<li class="last leaf"><a href="https://www.pinterest.com/usinterior/" rel="external" onclick="" data-hasqtip="40" oldtitle="DOI on Pintrest" title="" aria-describedby="qtip-40">Pintrest</a></li>
+			</ul>    </div>
+			
+			  
+			  </div>
+			  </div>
+			</div>
+			  </div>
+			      <div class="l-region l-region--navigation">
+				  
+					<!--
+	  		<a href="../en/index.html" rel="external"><div id="english" class="languageChanger"><p>English</p></div></a>
+	  
+			-->
+				  
+			    <div id="block-panels-mini-doi-navigation" class="block block--panels-mini block--panels-mini-doi-navigation">
+			        <div class="block__content">
+			    <div class="one-column panels-container" id="mini-panel-doi_navigation">
+			  
+			      <div class="main one-column--main">
+			<div class="panel-pane pane-mega-menu"><div class="open-menu-btn"></div>
+			            <div class="entity entity-bean bean-mega-menu clearfix" about="/block/doigov-main-site" typeof="">
+			
+			  <div class="content">
+			    <div class="field field--name-field-menu-sections field--type-field-collection field--label-hidden"><div class="field__items"><div class="field__item even"><div class="entity entity-field-collection-item field-collection-item-field-menu-sections clearfix" about="/field-collection/field-menu-sections/61" typeof="">
+			  <div class="content">
+			    <div class="field field--name-field-menu-link-parent field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="/whoweare" rel="external" class="menu-link-parent">Who We Are</a></div></div></div><div class="menu-link-dropdown"><div class="visit-link"><a href="/whoweare" rel="external">Visit Who We Are</a></div><div class="field field--name-field-menu-link-columns field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><h3><a href="https://www.doi.gov/whoweare/interior" rel="external">About the Interior</a></h3>
+			<ul><li><a href="https://www.doi.gov/whoweare/history/" rel="external" title="History of Interior">History of Interior</a></li>
+			<li><a href="https://www.doi.gov/whoweare/past_secretaries/" rel="external" title="Previous Secretaries">Previous Secretaries</a></li>
+			<li><a href="https://www.doi.gov/whoweare/orgchart/" rel="external" title="Organizational Chart">Organizational Chart</a></li>
+			<li><a href="https://www.doi.gov/whoweare/keyofficials/" rel="external" title="Key Officials">Key Officials</a></li>
+			<li><a href="https://www.doi.gov/pmb/ppp/upload/DOI-Strategic-Plan-for-FY-2014-2018-POSTED-ON-WEBSITE-4.pdf" rel="external" title="Strategic Plan">Strategic Plan</a></li>
+			<li><a href="http://elips.doi.gov/elips/" rel="external" title="Departmental Manual via Elips document library">Departmental Manual</a></li>
+			<li><a href="https://www.doi.gov/employees/events/" rel="external" title="Event Calendar">Event Calendar</a></li>
+			<li><a href="https://www.doi.gov/public/contact-us/" rel="external" title="Contact Us">Contact Us</a></li>
+			</ul><h3><a href="https://www.doi.gov/employees" rel="external">Employees</a></h3>
+			<ul><li><a href="http://mail.doi.gov" rel="external" title="BisonConnect">BisonConnect</a></li>
+			<li><a href="https://www.doi.gov/emergency/employeeemergency/" rel="external" title="Emergency Info">Emergency Info</a></li>
+			<li><a href="https://www.doi.gov/employees/additional-resources/" rel="external" title="Resources A-Z">Resources A-Z</a></li>
+			</ul></div><div class="field__item odd"><h3><a href="https://www.doi.gov/bureaus" rel="external">Bureaus</a></h3>
+			<ul><li><a href="http://www.bia.gov" rel="external" title="Bureau of Indian Affairs">Bureau of Indian Affairs</a></li>
+			<li><a href="http://www.bie.edu" rel="external">Bureau of Indian Education</a></li>
+			<li><a href="http://www.blm.gov" rel="external" title="Bureau of Land Management">Bureau of Land Management </a></li>
+			<li><a href="http://www.boem.gov" rel="external" title="Bureau of Ocean Energy Management">Bureau of Ocean Energy Management </a></li>
+			<li><a href="http://www.usbr.gov" rel="external" title="Bureau of Reclamation">Bureau of Reclamation </a></li>
+			<li><a href="http://www.bsee.gov" rel="external" title="Bureau of Safety and Environmental Enforcement">Bureau of Safety and Environmental Enforcement </a></li>
+			<li><a href="http://www.nps.gov" rel="external" title="National Park Service">National Park Service </a></li>
+			<li><a href="http://www.osmre.gov" rel="external" title="Office of Surface Mining Reclamation and Enforcement">Office of Surface Mining Reclamation and Enforcement </a></li>
+			<li><a href="http://www.fws.gov" rel="external" title="U.S. Fish and Wildlife Service">U.S. Fish and Wildlife Service </a></li>
+			<li><a href="http://www.usgs.gov" rel="external" title="U.S. Geological Survey">U.S. Geological Survey </a></li>
+			</ul></div><div class="field__item even"><h3><a href="https://www.doi.gov/bureaus/offices" rel="external">Offices</a></h3>
+			<ul><li><a href="https://www.doi.gov/sally-jewell" rel="external" title="Office of the Secretary">Office of the Secretary </a></li>
+			<li><a href="https://www.doi.gov/pmb/" rel="external" title="Office of Policy, Management &amp; Budget">Office of Policy, Management &amp; Budget </a></li>
+			<li><a href="https://www.doi.gov/oia/" rel="external" title="Office of Insular Affairs">Office of Insular Affairs </a></li>
+			<li><a href="https://www.doi.gov/solicitor/" rel="external" title="Office of the Solicitor">Office of the Solicitor </a></li>
+			<li><a href="https://www.doioig.gov" rel="external" title="Office of Inspector General">Office of Inspector General </a></li>
+			<li><a href="https://www.doi.gov/ocio/" rel="external" title="Office of the Chief Information Officer">Office of the Chief Information Officer </a></li>
+			<li><a href="https://www.doi.gov/ost/" rel="external" title="Office of the Special Trustee for American Indians">Office of the Special Trustee for American Indians </a></li>
+			<li><a href="https://www.doi.gov/bureaus/offices" rel="external">Other Interior Offices</a></li>
+			</ul></div><div class="field__item odd"><h3><a href="https://www.doi.gov/sally-jewell" rel="external">Secretary Jewell</a></h3>
+			<p><a href="https://www.doi.gov/sally-jewell" rel="external"><img alt="" class="align-left" height="115" src="../img/doiheader/menu-jewell.jpg" width="199"></a><br>Sally Jewell was sworn in as the 51st Secretary of the Interior on April 12, 2013.</p>
+			</div></div></div></div>  </div>
+			</div>
+			</div><div class="field__item odd"><div class="entity entity-field-collection-item field-collection-item-field-menu-sections clearfix" about="/field-collection/field-menu-sections/62" typeof="">
+			  <div class="content">
+			    <div class="field field--name-field-menu-link-parent field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://www.doi.gov/ourpriorities" rel="external" class="menu-link-parent">Our Priorities</a></div></div></div><div class="menu-link-dropdown"><div class="visit-link"><a href="https://www.doi.gov/ourpriorities" rel="external">Visit Our Priorities</a></div><div class="field field--name-field-menu-link-columns field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><h3>America's Great Outdoors</h3>
+			<ul><!-- <li><a href="https://www.doi.gov/urban" rel="external">Urban Projects</a></li> --><li><a href="/lwcf" rel="external">Land and Water Conservation Fund</a></li>
+			<li><a href="https://www.doi.gov/climate/" rel="external">Climate Change</a></li>
+			<li><a href="https://www.doi.gov/climate/carbonfootprint" rel="external">Reducing Interior's Carbon Footprint</a></li>
+			<li><a href="https://www.doi.gov/partnerships/awards" rel="external">Conservation Awards</a></li>
+			</ul><h3><a href="https://www.doi.gov/water" rel="external">Water Challenges</a></h3>
+			<ul><li><a href="https://www.doi.gov/watersmart" rel="external">WaterSMART</a></li>
+			</ul></div><div class="field__item odd"><h3><a href="https://www.doi.gov/youth/" rel="external" title="Youth">The Next Generation</a></h3>
+			<ul><li><a href="https://www.doi.gov/youth" rel="external">Youth Initiative</a></li>
+			<li><a href="https://www.doi.gov/everykid" rel="external">Every Kid in a Park</a></li>
+			<li><a href="https://www.doi.gov/letsmove" rel="external">Let's Move!</a></li>
+			<li><a href="https://www.doi.gov/pathways/" rel="external">Pathways</a></li>
+			<li><a href="https://www.doi.gov/public/volunteer" rel="external">Volunteer</a></li>
+			<li><a href="https://www.doi.gov/public/teachandlearn_kids" rel="external">Pages for Kids (for adults)</a>
+			<p>&nbsp;</p></li>
+			</ul><h3><a href="http://lccnetwork.org/" rel="external" onclick="" data-hasqtip="41">Landscape-level Resources</a></h3>
+			<ul><li><a href="http://lccnetwork.org/" rel="external" onclick="" data-hasqtip="42">Landscape Conservation Cooperatives</a></li>
+			<li><a href="https://www.doi.gov/csc" rel="external">Climate Science Centers</a></li>
+			</ul></div><div class="field__item even"><h3><a href="https://www.doi.gov/tribes" rel="external" title="Native Americans">Tribal Nations</a></h3>
+			<ul><li><a href="https://www.doi.gov/firstamericans" rel="external">First Americans</a></li>
+			<li><a href="https://www.doi.gov/buybackprogram" rel="external">Land Buy-back Program</a></li>
+			<li><a href="http://www.nativeonestop.gov/" rel="external" title="A one-stop shop for American Indians and Alaska Natives to access resources available from the U.S. Government.">Native One Stop</a></li>
+			<li><a href="https://www.doi.gov/cobell" rel="external">Cobell</a></li>
+			<li><a href="http://lmic.ihs.gov/" rel="external">Let's Move! in Indian Country</a></li>
+			<li><a href="http://www.bia.gov/WhoWeAre/BIA/OIS/TribalGovernmentServices/TribalDirectory/index.htm" rel="external">Tribal Leaders Directory</a></li>
+			<li><a href="https://www.doi.gov/ost" rel="external">Special Trustee for American Indians</a></li>
+			<li><a href="https://www.doi.gov/tribes/trace-ancestry" rel="external">Trace Indian Ancestry</a></li>
+			<li><a href="https://www.doi.gov/siwro" rel="external" style="background: transparent;">Secretary's Indian Water Rights Office</a></li>
+			<li><a href="https://www.doi.gov/subsistence" rel="external" style="background: transparent;">Office of Subsistence Management</a></li>
+			<li><a href="http://www.iacb.doi.gov" rel="external">Indian Arts &amp; Crafts Board</a></li>
+			</ul></div><div class="field__item odd"><h3><a href="https://www.doi.gov/energy" rel="external" title="New Energy Frontier">Powering Our Future</a></h3>
+			<ul><li><a href="http://www.blm.gov/wo/st/en/prog/energy/renewable_energy.html" rel="external">Renewable Energy @BLM</a></li>
+			<li><a href="http://www.usbr.gov/main/about/" rel="external">Hydropower @USBR</a></li>
+			<li><a href="https://www.doi.gov/eiti" rel="external">US Extractive Industries Transparency Initiative</a></li>
+			</ul><p><a href="https://www.doi.gov/energy" rel="external"><img alt="Wind turbines on water" height="115" src="../img/doiheader/wind_turbines_on_water.jpg" width="199"></a></p>
+			</div></div></div></div>  </div>
+			</div>
+			</div><div class="field__item even"><div class="entity entity-field-collection-item field-collection-item-field-menu-sections clearfix" about="/field-collection/field-menu-sections/63" typeof="">
+			  <div class="content">
+			    <div class="field field--name-field-menu-link-parent field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://www.doi.gov/joinus" rel="external" class="menu-link-parent">Join Us</a></div></div></div><div class="menu-link-dropdown"><div class="visit-link"><a href="/joinus" rel="external">Visit Join Us</a></div><div class="field field--name-field-menu-link-columns field--type-text-long field--label-hidden"><div class="field__items"><div class="field__item even"><ul><li><a href="https://www.doi.gov/public/findajob/" rel="external" title="Jobs">Jobs</a></li>
+			<li><a href="https://www.doi.gov/public/volunteer/" rel="external" title="Volunteer Opportunities">Volunteer Opportunities</a></li>
+			<li><a href="https://www.doi.gov/youth/" rel="external" title="Youth Initiative">Youth Initiative</a></li>
+			<li><a href="https://www.doi.gov/pathways/" rel="external" title="Pathways Program">Pathways Program</a></li>
+			<li><a href="https://www.doi.gov/veterans/" rel="external" title="Veterans Employment Programs">Veterans Employment Programs</a></li>
+			</ul></div><div class="field__item odd"><ul><li><a href="https://www.doi.gov/businesses/" rel="external" title="Businesses">Businesses</a></li>
+			<li><a href="https://edit.doi.gov/businesses/working-with-interior" rel="external" style="background: transparent;" title="Working with Interior">Working with Interior</a></li>
+			<li><a href="https://edit.doi.gov/partnerships" rel="external" style="background: transparent;" title="Become a Partner">Become a Partner</a></li>
+			</ul></div></div></div></div>  </div>
+			</div>
+			</div><div class="field__item odd"><div class="entity entity-field-collection-item field-collection-item-field-menu-sections clearfix" about="https://www.doi.gov/field-collection/field-menu-sections/64" typeof="">
+			  <div class="content">
+			    <div class="field field--name-field-menu-link-parent field--type-link-field field--label-hidden"><div class="field__items"><div class="field__item even"><a href="https://www.doi.gov/sitemap" rel="external" class="menu-link-parent no-children">Site Map</a></div></div></div>  </div>
+			</div>
+			</div></div></div>  </div>
+			</div>
+			    </div>
+			    </div>
+			  
+			  </div>
+			  </div>
+			</div>
+			
+			  </header>
+				
+			</div>
+			
+						</section>
+		</div>
+		
+		<div id="stickynavContainer" class="navMenu container">
+		<section id="stickynav">
+		<div class="widget">
+			
+			<div class="navBox">
+				<a id="welcomeLink" href="javascript:void(0);" onclick="owdiDrought.nav('#Introduction')" class="navLink">1</a>
+				<div class="navToolTip">Introducción</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="lifelineLink" href="javascript:void(0);" onclick="owdiDrought.nav('#Lifeline')" class="navLink">2</a>
+				<div class="navToolTip">El Río es Vida</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="oneRiverLink" href="javascript:void(0);" onclick="owdiDrought.nav('#OneRiver')" class="navLink">3</a>
+				<div class="navToolTip">Un solo río</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="controlLink" href="javascript:void(0);" onclick="owdiDrought.nav('#ControlStructures')" class="navLink">4</a>
+				<div class="navToolTip">Estructuras de control</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="waterSupplyLink" href="javascript:void(0);" onclick="owdiDrought.nav('#WaterSupply')" class="navLink">5</a>
+				<div class="navToolTip">Abastecimiento de agua</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="extendedDroughtLink" href="javascript:void(0);" onclick="owdiDrought.nav('#ExtendedDrought')" class="navLink">6</a>
+				<div class="navToolTip">Sequía prolongada</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="storageCapacityLink" href="javascript:void(0);" onclick="owdiDrought.nav('#StorageCapacity')" class="navLink">7</a>
+				<div class="navToolTip">Capacidad de almacenamiento</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="supplyDemandLink" href="javascript:void(0);" onclick="owdiDrought.nav('#SupplyDemand')" class="navLink">8</a>
+				<div class="navToolTip">Oferta y demanda</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="decliningStorageLink" href="javascript:void(0);" onclick="owdiDrought.nav('#DecliningStorage')" class="navLink">9</a>
+				<div class="navToolTip">Decreciente almacenamiento</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="shortageLink" href="javascript:void(0);" onclick="owdiDrought.nav('#Shortage')" class="navLink">10</a>
+				<div class="navToolTip">Escasez</div>
+			</div>
+			
+			<div class="navBox">
+				<a id="eraLink" href="javascript:void(0);" onclick="owdiDrought.nav('#EraOfHope')" class="navLink">11</a>
+				<div class="navToolTip">Una era de esperanza</div>
+			</div>
+			
+		</div>
+		
+				</section>
+            </div>
+		
+            <div id="Introduction" class="container">
+                <section id="welcome" class="section">
+		<div class="widget">
+			<div id="keynote1" class="keynote">
+		    	<div id="pin1" class="pin">
+		        	<h1>Sequía en la Cuenca del Río Colorado</h1>
+		            <h2 id="emphasized">Perspectivas utilizando datos abiertos</h2>
+					
+					<a href="javascript:void(0)" onclick="window.scrollBy(0, 300);">
+						<img title="Le invitamos a desplazarse hacia abajo para ver esta aplicación." id="scrollDownArrow" src="../img/herdingarrow.png" alt="scroll down arrow"/>
+					</a>
+		        </div>
+		    </div>
+			
+		</div>
+		
+		<script>
+		
+			$('#welcomeLinkOut').on('click', function(){
+				$('#welcomeLink').toggle();
+				$('#welcomeURL').select();
+				});
+		
+		
+		</script>
+				</section>
+            </div>
+	    <div id="app-explanationContainer" class="container">
+                <section id="app-explanation" class="section">
+		<div class="widget">
+			<div class="sectionContent">
+				<p>Del año 2000 a la fecha, la Cuenca del Río Colorado ha sufrido una histórica y prolongada sequía que ha afectado el suministro regional de agua y otros recursos, entre ellos la energía hidroeléctrica, la recreación, y los servicios ecológicos. Dicho periodo representa el plazo de 16 años consecutivos con el menor ingreso de agua en los más de 100 años que se ha llevado un registro, y el almacenamiento en presas del Sistema del Río Colorado ha disminuido de casi lleno a aproximadamente la mitad de su capacidad. </p>
+				
+		
+				<p>El Servicio Geológico de los Estados Unidos y el Buró de Reclamación desarrollaron la presente aplicación en apoyo a la <a href="http://acwi.gov/spatial/owdi/" target="_blank">Iniciativa para el Libre Acceso a Datos Hídricos</a> (OWDI, por sus siglas en inglés) del Departamento del Interior. Esta visualización forma parte de un esfuerzo interinstitucional para demostrar la utilidad de las bases de datos de libre acceso (es decir, datos que se proporcionan en un formato detectable, compartible, y legible por máquina) mediante la exploración de la actual sequía de 16 años y sus efectos sobre le Cuenca del Río Colorado. </p>
+		
+			<div id="appExplainHiddenContent" class="hiddenContent">
+		
+				<p>Existe una creciente preocupación respecto a los impactos de la continua sequía y la disminución de los niveles en los embalses, entre ellos un menor suministro de agua y la posibilidad de una primera condición de escasez de agua potable para la Cuenca Baja; una capacidad cada vez menor de energía hidroeléctrica en el Lago Powell y el Lago Mead; el potencial de perder la generación hidroeléctrica en el Lago Powell; reducción de las oportunidades recreativas; y cambios en los caudales de corriente que sustentan ecosistemas.</p>
+		        
+		        <p>En respuesta a las condiciones de sequía, dependencias Federales y grupos de interés a lo largo de la Cuenca han estado trabajando juntos para encontrar maneras creativas para reducir los impactos de la sequía a la gente y los recursos que dependen del agua del Río Colorado.</p>
+		
+		        <p>Le invitamos a desplazarse hacia abajo para aprender más sobre la importancia del Río Colorado, los impactos de la sequía actual, y las formas en que la sequía se está gestionando en la Cuenca.</p>
+		
+				</div><!--Hidden Content-->
+				
+				<p id="appExplainReadMore" class="readMore">Leer más >></p>
+				
+			</div>
+			
+			<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="appExplainLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="appExplainLink" class="takeLinkBlue" >
+					<input id="appExplainURL" title="Link to Application Explanation" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#app-explanation">
+				</div>
+			</div>
+			
+		</div>
+		<script>
+		var appExplainreadMore = $('#appExplainReadMore');
+		var appExplainhiddenContent = $('#appExplainHiddenContent');
+			appExplainreadMore.on('click', function(){
+			
+				appExplainhiddenContent.slideToggle('slow');
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+				});	
+				
+				$('#appExplainLinkOut').on('click', function(){
+					$('#appExplainLink').toggle();
+					$('#appExplainURL').select();
+				});
+		</script>		</section>
+            </div>
+	    <div id="Lifeline" class="container">
+                <section id="mainmessage1" class="section">
+		<div class="widget">
+			<div id="keynote2" class="keynote">
+		    	<div id="pin2" class="pin">
+		        	<h2>El Río Colorado es Vida.</h2>
+		        </div>
+		    </div>
+			
+		</div>
+		
+		<script>
+		
+			$('#lifeLineLinkOut').on('click', function(){
+				$('#lifeLineLink').toggle();
+				$('#lifeLineURL').select();
+				});
+		
+		</script>
+		
+				</section>
+            </div>
+            <div id="lifeLineContainer" class="container">
+                <section id="co-river-lifeline" class="section">
+		<div class="widget">
+			<div class="sectionContent">
+		        <p>El agua del Río Colorado es esencial para la vida en partes del suroeste de los Estados Unidos y el Noroeste de México. Según el Estudio de Oferta y Demanda de Agua de la Cuenca del Río Colorado (2012), el Río Colorado y sus afluentes:</p>
+		        
+		        <ul>
+		        	<li>Suministran a más de 1 de cada 10 estadounidenses una parte, si no es que toda, el agua para uso municipal, incluyendo el agua potable.</li>
+		            
+		            <li>Proporcionan agua para riego a más de 22,260 kilómetros de tierra.</li>
+		            
+		            <li>Son esenciales como un recurso físico, económico y cultural para por lo menos <a href="http://www.bia.gov/WhoWeAre/BIA/OIS/TribalGovernmentServices/TribalDirectory/" target="_blank">22 pueblos indígenas  federalmente reconocidos</a>. </li>
+		            <li>Permiten una capacidad de generación de 4,200 megavatios de energía eléctrica, misma que suministra a cientos de zonas locales y millones de personas.</li>
+		            <li>Tienen lazos directos con nueve unidades del <a href="http://www.nps.gov/index.htm" target="_blank">Servicio de Parques Nacionales</a> y siete <a href="http://www.fws.gov/" target="_blank">Refugios Nacionales de Vida Silvestre</a>, los cuales apoyan en la generación más de $1 mil millones en ingresos por turismo relacionado con la recreación al aire libre y la vida silvestre.</li>
+		            <li>Ofrecen un hábitat para una gran variedad de especies, entre ellas <a href="http://www.fws.gov/endangered/esa-library/pdf/ESA_basics.pdf" target="_blank">especies amenazadas y en peligro de extinción</a>, así como de otras especies de fauna y vegetación.</li>
+		            
+		        </ul>
+		        
+		
+		        <button class="supportinginfo" id="sectionLLButton">Información de apoyo</button>
+		        
+		        <div class="supportingInfoContent" id="sectionLLInfo">
+		            <p> Bureau of Reclamation, 2012. <a href="http://www.usbr.gov/lc/region/programs/crbstudy/finalreport/Study%20Report/CRBS_Study_Report_FINAL.pdf" target="_blank">Colorado River Basin Water Supply and Demand Study</a>.   </p>
+		
+		        </div>
+		        
+		        
+		        
+				<div id="photoPanel">
+					<img src="../img/photo-panel/farming.jpg?version=1.1.0" alt="farming in Colorado"/>
+					<img src="../img/photo-panel/electricity.jpg?version=1.1.0" alt="electirciy in Colorado"/>
+					<img src="../img/photo-panel/recreation.jpg?version=1.1.0" alt="recreation in Colorado"/>
+					<img src="../img/photo-panel/wetland.jpg?version=1.1.0" alt="wetland in Colorado"/>
+					<img src="../img/photo-panel/desert.jpg?version=1.1.0" alt="desert in Colorado"/>
+					<img src="../img/photo-panel/recreation2.jpg?version=1.1.0" alt="recreation in Colorado"/>
+				</div>
+		    
+				
+			</div>
+			
+			<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="coRiverLifeLineLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="coRiverLifeLineLink" class="takeLinkBlue" >
+					<input id="coRiverLifeLineURL" title="Link to Lifeline Section" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#coRiverLifeLine">
+				</div>
+			</div>
+			
+		</div>
+		
+		<script>
+		    var button = $('#sectionLLButton');
+		    
+		    button.click(function() {
+		                 $('#sectionLLInfo').toggle();
+		                 });
+						 
+			$('#coRiverLifeLineLinkOut').on('click', function(){
+					$('#coRiverLifeLineLink').toggle();
+					$('#coRiverLifeLineURL').select();
+				});
+		
+		    </script>		</section>
+            </div>
+	    <div id="OneRiver" class="container">
+                <section id="mainmessage5" class="section">
+		<div class="widget">
+		
+			<div id="keynote6" class="keynote">
+		    	<div id="pin6" class="pin">
+		        	<h2>Un solo río, dos componentes.</h2>
+		    	</div>
+			</div>
+		    
+		</div>
+		
+		<script>
+		
+			$('#OneRiverLinkOut').on('click', function(){
+				$('#OneRiverLink').toggle();
+				$('#OneRiverURL').select();
+				});
+		
+		</script>		</section>
+            </div>
+            <div id="basinDividedContainer" class="container">
+                <section id="basin-divided" class="section">
+		<div class="widget">
+		    <div class="sectionContent">
+		        
+				<p>Con aproximadamente 2,253 kilómetros de longitud y un cauce que cruza siete estados en los Estados Unidos y a México, el Río Colorado drena aproximadamente una doceava parte de la superficie terrestre de los Estados Unidos contiguos. La Cuenca del Río Colorado se divide en las Cuencas Alta y Baja en el Punto Lee Ferry del Pacto del Río Colorado (<a href="http://www.usbr.gov/lc/region/g1000/pdfiles/crcompct.pdf" target="_blank">Colorado River Compact</a> , o Compact Point) ubicado en el norte de Arizona. La Cuenca Alta abarca partes de Wyoming, Colorado, Nuevo México, Utah y el norte de Arizona. La Cuenca Baja cubre partes de Nevada, Arizona, California y el oeste de Nuevo México. El Río Colorado también suministra agua a partes de los estados de Baja California y Sonora, en el noroeste de México.</p>
+				
+		        
+		        
+		        
+				<div id="co-basin-map">
+					<object id="co-basin-object" data="img/lo_CO_borders.svg?version=1.1.0" type="image/svg+xml"></object>
+				</div>
+				
+				<!--<img src="../img/3dbasins.jpg" alt="lower and upper colorado basins in 3D"/>-->
+		
+		        <p> La Cuenca Alta del Río Colorado suministra aproximadamente el 90 por ciento del agua de toda la Cuenca. El vital líquido se origina como precipitación y desnieve en las montañas Rocallosas y Wasatch. Alrededor del 50 por ciento de los flujos proviene del caudal base, que es el agua superficial que se infiltra en aguas subterráneas acuíferas y posteriormente se reintegra al caudal superficial (<a href="http://water.usgs.gov/watercensus/file/Rumsey-et-al_2015.pdf" target="_blank">Rumsey et al., 2015</a>). La Cuenca Baja es árida, por lo que un limitado volumen de escurrimientos de ríos tributarios desembocan a la corriente principal del Río Colorado, salvo ocasionalmente durante eventos de lluvia.  </p>
+		        
+				<div id="basinDividedHiddenContent" class="hiddenContent">
+		        <p> La Cuenca Baja depende del uso gestionado del Sistema del Río Colorado para que sus tierras circundantes sean habitables y productivas. Las aguas del Río Colorado también son llevadas a zonas ubicadas más allá del límite de la Cuenca hidrológica, entre ellas partes del sur de California, el lado oriente de la Cordillera Frontal en Colorado, y el lado oeste de las montañas Wasatch en Utah. Además, pueblos indígenas reconocidos federalmente son derechohabientes de una cantidad sustancial de aguas federales cuantificadas y no cuantificadas del Río Colorado y sus afluentes (aproximadamente 3,577 millones de metros cúbicos en derechos anuales de derivación).</p>
+		        
+		        <p>Los recursos e instalaciones, tales como presas y plantas eléctricas, en la Cuenca del Río Colorado se gestionan con el fin de lograr sus objetivos de proyectos en cumplimiento pleno con las disposiciones aplicables de la Ley Federal, incluyendo la <a href="http://www.usbr.gov/lc/region/g1000/lawofrvr.html" target="_blank">Ley del Río</a> y otras directrices administrativas  específicas del proyecto. La Ley del Río incluye criterios operativos, normas, dictámenes administrativos, estatutos Federales, pactos interestatales, fallos y decretos judiciales, un tratado internacional, y contratos con el Secretario de Departamento del Interior de los Estados Unidos (Secretario), y define las atribuciones del Secretario en su función de "Watermaster" (Jefe Hídrico) en la Cuenca Baja.</p>
+				</div>
+				
+				<p id="basinDividedReadMore" class="readMore">Leer más >></p>
+				
+				<button class="supportinginfo basins white" id="sectionBasinDivButton">Información de apoyo</button>
+				
+				<div class="supportingInfoContent" id="sectionBDInfo">
+					<p>Rumsey, C.A., et al. 2015. "<a href="http://water.usgs.gov/watercensus/file/Rumsey-et-al_2015.pdf" target="_blank">Regional scale estimates of baseflow and factors influencing baseflow in the Upper Colorado River Basin</a>." Journal of Hydrology: Regional Studies 4: 91-107. </p>
+				</div>
+				
+				<div class="exploreMore" id="basinExplore">
+					<a href="../img/detailedbasinmap.png" target="_blank">
+						<img src="../img/basinexplorethumbnail.jpg?version=1.1.0" alt="Detailed Colorado Basin Map"/>
+					</a>
+					<p>Aprenda más acerca de la red de presas de la Cuenca del Río Colorado, la infraestructura de suministro de agua, y las áreas que reciben servicio de suministro de agua</p>
+					<a href="../img/detailedbasinmap.png" target="_blank"><button class="extraButton">Explorar</button></a>
+				</div>
+		    
+			</div>    
+		    
+			<div class="socialMedia onWhite" id="tooHigh">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="basinDividedLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="basinDividedLink" class="takeLinkBlue" >
+					<input id="basinDividedURL" title="Link to a Basin Divided" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#basin-divided">
+				</div>
+			</div>
+		    
+		</div>
+		
+		
+		
+		<script>
+		    var button = $('#sectionBasinDivButton');
+		    
+		    button.click(function() {
+		                 $('#sectionBDInfo').toggle();
+		                 });
+						 
+			var basinDividedreadMore = $('#basinDividedReadMore');
+			var basinDividedhiddenContent = $('#basinDividedHiddenContent');
+			
+			basinDividedreadMore.on('click', function(){
+				
+				basinDividedhiddenContent.slideToggle('slow');
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+				});	
+				
+				$('#basinDividedLinkOut').on('click', function(){
+					$('#basinDividedLink').toggle();
+					$('#basinDividedURL').select();
+				});
+		</script>		</section>
+            </div>
+	    <div id="ControlStructures" class="container">
+                <section id="mainmessage2" class="section">
+		<div class="widget">
+		
+			<div id="keynote3" class="keynote">
+		    	<div id="pin3" class="pin">
+		        	<h2>El Río Colorado se gestiona mediante una serie de presas y canales que proporcionan control de avenidas, conservación del agua y permiten generación hidroeléctrica.</h2>
+		        </div>
+		    </div>
+		
+		</div>
+		
+		<script>
+		
+			$('#controlStructuresLinkOut').on('click', function(){
+				$('#controlStructuresLink').toggle();
+				$('#controlStructuresURL').select();
+				});
+		
+		</script>
+		
+				</section>
+            </div>
+            <div id="blueDragonContainer" class="container">
+                <section id="blue-dragon" class="section">
+		<div class="widget">
+		
+		<div class="sectionContent" id="blueDragonSection">
+		
+		        <p>Las presas y canales en el sistema del Río Colorado sirven para almacenar el suministro regional de agua, facilitar las entregas de agua, coadyuvar en el control de avenidas, mejorar la navegación y generar energía hidroeléctrica. Estas instalaciones se operan en coordinación con sistemas de entrega de agua cercanos o adyacentes que también proporcionan una diversidad de beneficios económicos, culturales y ecológicos.</p>
+		        
+				<div id="blueDragonHiddenContent" class="hiddenContent">
+		        
+		        <p>En la Cuenca Baja, la Presa Hoover se construyó para fines de control de avenidas, mejorar la navegación y regular el caudal del río, proporcionar almacenamiento y entrega de agua, y generar energía eléctrica. La Presa Davis y la Presa Parker se construyeron para regular el agua que descarga la Presa Hoover. Cerca del extremo sur del sistema, la Presa Imperial sirve como la última presa de derivación en el Río Colorado para los Estados Unidos, mientras que la Presa Morelos deriva las aguas del Río Colorado hacia México.  </p>
+		        
+		        <p>El agua se descarga de dichas instalaciones para cumplir con los compromisos de entrega a usuarios en Nevada, California, Arizona y México, y aprovecha además las descargas para generar energía hidroeléctrica. Plantas de bombeo ubicadas en el Lago Havasu detrás de la Presa Parker derivan agua para el Distrito Metropolitano de Agua del Sur de California y el Proyecto de Arizona Central. Desde la obra de toma de la Presa Imperial, el agua se desvía hacia el Canal Todo Americano del lado de la Presa ubicado en California y hacia el Canal Principal de Gravedad Gila en el lado de la Presa ubicado en Arizona. Estas derivaciones proporcionan agua al Proyecto Gila, el Proyecto Yuma, el Distrito de Riego Imperial, el Distrito Hídrico del Valle Coachella, y la Ciudad de Yuma, y al Límite Internacional Norte (LIN) para su derivación en la Presa Morelos hacia México. </p>
+				</div>
+				
+				<p id="blueDragonReadMore" class="readMore">Leer más >></p>
+				
+				<h4>Posiciónese sobre secciones del siguiente diagrama para obtener información adicional</h4>
+		       
+			<div id="blueDragon">
+				
+				<object id="bluedragon-object" data="../img/bluedragon-animate.svg?version=1.1.0" type="image/svg+xml" ></object>
+			</div>
+		
+		
+		<div class="graphCaption">
+		<p class="chill">El diagrama que antecede ilustra las presas, los embalses, y estructuras de control principales del Bajo Río Colorado.</p>
+		
+		</div>
+		
+		
+			<a href="../bluedragon.pdf" target="_blank">
+				<div id="dragonText">
+					<h4>Haga clic aquí para ver una versión en PDF del Diagrama Operativo.</h4>
+				</div>
+			</a>
+			
+				<div class="exploreMore" id="blueDragonExplore">
+					<a href="http://txpub.usgs.gov/DSS/StoryMaps/BlueDragon/" target="_blank">
+						<img src="../img/texas-app.jpg?version=1.1.0" alt="texas water science center app"/>
+					</a>
+					<p>Acceda a datos en tiempo real y realice un recorrido de los principales embalses en la Cuenca Baja del Río Colorado.</p>
+					<a href="http://txpub.usgs.gov/DSS/StoryMaps/BlueDragon/" target="_blank"><button class="extraButton">Explorar</button></a>
+				</div>
+				
+			</div>
+			
+			<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="blueDragonLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="blueDragonLink" class="takeLinkBlue" >
+					<input id="blueDragonURL" title="Link to Blue Dragon Section" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#blue-dragon">
+				</div>
+			</div>
+		
+		</div>
+		
+		<script>
+		
+			var blueDragonReadMore = $('#blueDragonReadMore');
+			var blueDragonHiddenContent = $('#blueDragonHiddenContent');
+			
+			blueDragonReadMore.on('click', function(){
+				
+				blueDragonHiddenContent.slideToggle('slow');
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+				});	
+				
+				$('#blueDragonLinkOut').on('click', function(){
+					$('#blueDragonLink').toggle();
+					$('#blueDragonURL').select();
+				});
+		
+		
+		</script>		</section>
+            </div>
+	    <div id="WaterSupply" class="container">
+                <section id="waterSupplyVariableOverTime" class="section">
+		<div class="widget">
+		
+			<div id="waterVariable" class="keynote">
+		    	<div id="pin8" class="pin">
+		        	<h2>El suministro de agua varía con el tiempo.</h2>
+		    	</div>
+			</div>
+		    
+		</div>
+		
+		<script>
+		
+			$('#waterSupplyLinkOut').on('click', function(){
+				$('#waterSupplyLink').toggle();
+				$('#waterSupplyURL').select();
+				});
+		
+		</script>		</section>
+            </div>
+	    <div id="waterSupplyVariableContentContainer" class="container">
+                <section id="waterSupplyVariableContent" class="section">
+		<div class="widget">
+		    <div class="sectionContent">
+			
+		    <p>Debido a las diferencias en precipitaciones y deshielo de un año a otro, el suministro natural de agua de la Cuenca es sumamente variable. Una sequía de largo plazo como la que la Cuenca ha experimentado desde el año 2000 refleja la variabilidad natural del clima, aunado a los impactos probables del <a href="http://www.usbr.gov/lc/region/programs/crbstudy/finalreport/Study%20Report/CRBS_Study_Report_FINAL.pdf" target="_blank">cambio climático</a>. Debido a que la mayoría del abasto de agua de la Cuenca proviene de la Cuenca Alta, la condición de sequía en la Cuenca Alta afecta el suministro y los recursos hídricos tanto en la Cuenca Alta como en la Cuenca Baja del Río Colorado. </p>
+		    
+		    <p>La estación hidrométrica del Servicio Geológico de los Estados Unidos (USGS) en Lees Ferry, Arizona es la estación más aguas abajo en el cauce principal de la Cuenca Alta, localizado alrededor de 12 millas abajo de la Presa Glen Canyon, y casi 1 milla arriba del Punto Oficial de Entrega del Pacto del Río Colorado entre la Cuenca Alta y la Cuenca Baja. El escurrimiento virgen en esta estación hidrométrica se usa como indicador de las condiciones hidrológicas en la Cuenca Alta y de la salud hidrológica general de la Cuenca. Escurrimiento virgen se define como el caudal que habría existido de no ser por los efectos de actividades humanas como la regulación del embalse o las derivaciones de gastos del río.</p>
+		
+		<h4>Para ver detalles adicionales, posicione su cursor sobre las distintas secciones de la gráfica a continuación.</h4>
+		
+		
+		
+				<object id="droughtMovingAvg-object" data="img/droughtMovingAverage.svg?version=1.1.0" type="image/svg+xml">
+				</object>
+				
+		        
+		        <div class="graphCaption">
+		            <p>En la gráfica arriba, el promedio de <a href="http://www.usbr.gov/lc/region/g4000/NaturalFlow/documentation.html" target="_blank">escurrimiento virgen</a> de 10 años en Lees Ferry muestra periodos que son por debajo y por encima del promedio de escurrimiento anual (aproximadamente 18,270 millones de metros cúbicos [mcm]). La sequía más reciente durante el período 2000-2015 (indicado por el área sombreada en color café) fue el periodo de 16 años de mayor escasez en los últimos 100 años, y uno de los períodos de 16 años de mayor escasez en los últimos 1,200 años. La gráfica también ilustra el hecho de que los principios del siglo XX, precisamente el período que se utilizó como referencia para establecer las asignaciones para las Cuencas Alta y Baja dentro del <a href="http://www.usbr.gov/lc/region/g1000/pdfiles/crcompct.pdf" target="_blank">Pacto del Río Colorado</a> de 1922, fueron un período de singular abundancia (indicado por el área sombreada en color verde). En la época en que se suscribió el Pacto del Río Colorado de 1922, el flujo promedio anual en Lees Ferry durante el período previo al Pacto (1906-1921) fue de aproximadamente 22,200 mcm.</p>
+		            
+		        </div>
+		        
+		
+		
+		<p>El USGS ha registrado sus observaciones del Río Colorado en Lees Ferry (<a href="http://pubs.usgs.gov/pp/pp1677/pdf/pp1677.pdf" target="_blank">sitio USGS 09380000</a>) desde el año 1895. Para más información y datos de dicho sitio, visite el <a href="http://waterdata.usgs.gov/nwis/wys_rpt/?site_no=09380000&agency_cd=USGS" target="_blank">portal de la estación hidrométrica Lees Ferry del Sistema Nacional</a> de información Hídrica del Servicio Geológico de Los Estados Unidos. Para acceder a datos en tiempo real respecto de elevación, descarga, temperatura del agua, sedimentos y parámetros de calidad del agua, favor de visitar el <a href="http://www.gcmrc.gov/discharge_qw_sediment/station/GCDAMP/09380000" target="_blank">portal del Centro de Investigación y Monitoreo del Gran Cañón</a> del Servicio Geológico de los Estados Unidos.</p>
+		        
+		<p>La estación hidrométrica de Lees Ferry es distinta al Punto Lee Ferry del Pacto del Río Colorado: la estación hidrométrica de Lees Ferry se refiere a la <a href="http://waterdata.usgs.gov/nwis/wys_rpt/?site_no=09380000&agency_cd=USGS" target="_blank">estación hidrométrica que opera el USGS</a> ubicada cerca de la ciudad de Lees Ferry, Arizona; mientras que Lee Ferry se refiere al Punto Oficial de Entrega, como se indica en el  <a href="http://www.usbr.gov/lc/region/g1000/pdfiles/crcompct.pdf" target="_blank">Pacto del Río Colorado</a> de 1922. El Punto Lee Ferry del Pacto del Río Colorado está situado a una milla río abajo de la estación hidrométrica Lees Ferry. </p>
+		        
+		
+		<p>Se extendieron las observaciones históricas con una <a href="../treeringdata/index.html" target="_blank">reconstrucción de anillos de árboles</a> del caudal que se remonta a aproximadamente 1,200 años, según estimado por Meko et al. (2007a). Debido a que los árboles crecen menos durante los años de escasez de agua, y más durante los años de abundancia, se pueden usar núcleos de anillos de árboles para estimar las condiciones históricas del escurrimiento varios siglos hacia atrás. Se recolectaron muestras de núcleos de anillos de árboles en diversos puntos a lo largo de la Cuenca Alta para estimar el escurrimiento virgen histórico. Estas estimaciones se validaron utilizando los registros de observaciones del escurrimiento virgen que desarrolló el Buró de Reclamación. </p>
+		
+		
+		
+		<div class="exploreMore" id="dygraphExtra">
+			<a href="../treeringdata/index.html" target="_blank">
+				<img src="../img/treeringthumbnail.png?version=1.1.0" alt="Miniatura de datos de anillos de árboles"/>
+			</a>
+		    <p>Para explorar más sobre el escurrimiento virgen reconstruido en base a datos de anillos de árboles, haga clic en el botón a continuación.</p>
+		    <a href="../treeringdata/index.html" target="_blank"><button class="extraButton">Explorar</button></a>
+		</div>
+		
+		
+		
+		   
+		
+		
+		
+		
+		
+		<button class="supportinginfo basins white" id="sectionVarSuppButton">Información de apoyo</button>
+		
+		<div class="supportingInfoContent" id="sectionVSInfo">
+		    
+		    
+		    <p> <a href="http://www.usbr.gov/lc/region/g1000/pdfiles/crcompct.pdf" target="_blank">1922 Colorado River Compact</a>.</p>
+		    
+		    
+		    <p>Bureau of Reclamation. 1922. <a href="http://wwa.colorado.edu/resources/colorado-river/docs/compact/meeting19andforeward.pdf" target="_blank">Minutes of the 19th meeting of the Colorado River Commission</a>.</p>
+		    
+		    <p>Bureau of Reclamation, 2015. <a href="http://www.usbr.gov/lc/region/g4000/NaturalFlow/" target="_blank">Natural Flow and Salt Data</a>.</p>
+		    
+		
+		    <p>Bureau of Reclamation, 2012. <a href="http://www.usbr.gov/lc/region/programs/crbstudy/finalreport/Study%20Report/CRBS_Study_Report_FINAL.pdf" target="_blank">Colorado River Basin Water Supply and Demand Study</a>. </p>
+		    <p>Meko, D.M., C.A. Woodhouse, C.H. Baisan, T. Knight, J.J. Lukas, M.K. Hughes, and M.W. Salzer, 2007. <a href="http://onlinelibrary.wiley.com/doi/10.1029/2007GL029988/pdf" target="_blank">Medieval drought in the upper Colorado River Basin</a>. Geophysical Research Letters, Vol. 34, L10705.</p>
+		
+		
+		    
+		    <p><a href="http://ltrr.arizona.edu/" target="_blank">Lab of Tree-Ring Research</a></p>
+		</div>
+		
+		    </div>
+			
+			<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="waterVariableLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="waterVariableLink" class="takeLinkBlue" >
+					<input id="waterVariableURL" title="Link to Water Supply" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#waterSupplyVariableContent">
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<script>
+		    var button = $('#sectionNatFlowButton');
+		    
+		    button.click(function() {
+		                 $('#sectionNFInfo').toggle();
+		                 });
+		                 
+		    var button = $('#sectionVarSuppButton');
+		    
+		    button.click(function() {
+		                 $('#sectionVSInfo').toggle();
+		                 });
+						 
+			$('#waterVariableLinkOut').on('click', function(){
+					$('#waterVariableLink').toggle();
+					$('#waterVariableURL').select();
+				});
+		                 
+		    </script>		</section>
+            </div>
+		<div id="ExtendedDrought" class="container">
+                <section id="mainmessagedirt" class="section">
+		<div class="widget">
+			<div id="keynotedirt" class="keynote">
+		    	<div id="pindirt" class="pin">
+		        	<h2>El occidente de EE.UU. está viviendo una sequía prolongada.</h2>
+		        </div>
+		    </div>
+			
+		</div>
+		
+		<script>
+		
+			$('#ExtendedDroughtLinkOut').on('click', function(){
+				$('#ExtendedDroughtLink').toggle();
+				$('#ExtendedDroughtURL').select();
+				});
+		
+		</script>		</section>
+            </div>
+	    <div id="droughtContainer" class="container">
+                <section id="dygraphsection" class="section">
+		<div class="widget">
+			<div class="sectionContent">
+				<p>Del año 2000 a la fecha, la Cuenca del Río Colorado ha visto el periodo de 16 años con mayor escasez de agua en más de 100 años de registro histórico del escurrimiento natural (Buró de Reclamación, 2015). Este periodo además ocupa el quinto lugar entre los periodos de 16 años de mayor escasez en los últimos 1,200 años (Meko et al., 2007a y 2007b).   </p>
+		
+		
+		   	 	<p>No obstante que la sequía actual es severa e histórica, la sequía más extrema en la Cuenca del Río Colorado se presentó a mediados del siglo XII (Meko et al., 2007a). La sequía del siglo XII se caracterizó por un periodo de 25 años con caudales 15% menores al promedio a largo plazo, mismo que es de 18,256 millones de metros cúbicos, y ningún año con caudales mayores (superiores a 125% del promedio) durante seis décadas. En contraste, la sequía actual se caracteriza por caudales 16% menores al promedio a largo plazo, con un año de caudales mayores (135% del promedio en 2011).</p>
+		
+			   
+			   	<a href="http://droughtmonitor.unl.edu/" target="_blank">
+		        	<img id="usDroughtGif" src="../img/usdrought.gif?version=1.1.0" alt="Monitor de Sequía de EE.UU."/>
+				</a>
+		
+		
+		
+		<div class="graphCaption">
+		<p>The <a href="http://droughtmonitor.unl.edu/" target="_blank">U.S. Drought Monitor</a> shows the extent and intensity of drought conditions in the Western U.S. from 2000 to 2015. The <a href="http://livingatlas.arcgis.com/drought" target="_blank">Esri  Drought Tracker</a> provides a means to view drought conditions in the U.S. over time, using data from the U.S. Drought Monitor.
+</p></div>
+		
+		
+				<div class="exploreMore" id="usdroughtgifexplore">
+					<a href="http://livingatlas.arcgis.com/drought" target="_blank">
+						<img src="../img/usdroughtthumbnail.jpg?version=1.1.0" alt="US Drought in the Colorado River Basin Explore More"/>
+					</a>
+					<p>Para ver información adicional acerca de la sequía en EE.UU. y en la Cuenca del Río Colorado, haga clic en el botón a continuación. </p>
+					<a href="http://livingatlas.arcgis.com/drought" target="_blank"><button id="
+					usdroughtgifexploreButton" class="extraButton">Explorar</button></a>
+			</div>
+		
+		
+				<button class="supportinginfo" id="section6Button">Información de apoyo</button>
+				
+				<div class="supportingInfoContent" id="section6Info">
+		            <p>Bureau of Reclamation, 2015. <a href="http://www.usbr.gov/lc/region/g4000/NaturalFlow/index.html" target="_blank">Colorado River Basin Natural Flow and Salt Data website</a>.</p>
+		            
+		            <p>Meko, D.M., et al. 2007a. <a href="ftp://ftp.ncdc.noaa.gov/pub/data/paleo/treering/reconstructions/northamerica/usa/upper-colorado-flow2007.txt" target="_blank">Upper Colorado River Flow Reconstruction</a>. IGBP PAGES/World Data Center for Paleoclimatology. Data Contribution Series # 2007-052. NOAA/NCDC Paleoclimatology Program, Boulder CO, USA.</p>
+		            
+		            <p>Meko, D.M., C.A. Woodhouse, C.H. Baisan, T. Knight, J.J. Lukas, M.K. Hughes, and M.W. Salzer. 2007b. <a href="http://onlinelibrary.wiley.com/doi/10.1029/2007GL029988/pdf" target="_blank">Medieval drought in the upper Colorado River Basin</a>. Geophysical Research Letters, Vol. 34, L10705.</p>
+		
+		    	</div>
+		        
+			</div>
+			
+			<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="droughtMonitorLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="droughtMonitorLink" class="takeLinkBlue" >
+					<input id="droughtMonitorURL" title="Link to Drought Monitor Section" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#droughtContainer">
+				</div>
+			</div>
+			
+		</div>
+		
+		<script>
+		    var button = $('#section6Button');
+		    
+		    button.click(function() {
+		        $('#section6Info').toggle();
+		    });
+						 
+			$('#droughtMonitorLinkOut').on('click', function(){
+					$('#droughtMonitorLink').toggle();
+					$('#droughtMonitorURL').select();
+				});
+		
+		    </script>
+				</section>
+            </div>
+            <div id="StorageCapacity" class="container">
+                <section id="mainmessage3" class="section">
+		<div class="widget">
+		
+			<div id="keynote4" class="keynote">
+		
+		        	<h2>Gracias a la abundante capacidad de almacenamiento de agua de la Cuenca del Río Colorado, el sudoeste de EE.UU. tiene una mayor capacidad de recuperación ante la sequía.</h2>
+		        	
+		
+		    </div>
+			
+		</div>
+		
+		<script>
+		
+			$('#storageCapacityLinkOut').on('click', function(){
+				$('#storageCapacityLink').toggle();
+				$('#storageCapacityURL').select();
+				});
+		
+		</script>		</section>
+            </div>
+            <div id="basinReservoirContainer" class="container">
+                <section id="co-basin-reservoir" class="section">
+		<div class="widget">
+			<div class="sectionContent">
+				<p>En su totalidad, la capacidad del sistema de almacenamiento de la cuenca asciende a unos 74,010 millones de metros cúbicos (mcm), es decir, aproximadamente cuatro veces el escurrimiento promedio anual en la Cuenca Alta (18,260 mcm). Los dos embalses más grandes de la Cuenca, el Lago Powell y el Lago Mead, en conjunto cuentan con una capacidad de almacenamiento de alrededor de 61,670 mcm, la cual constituye aproximadamente el 83% de la capacidad total de almacenamiento del sistema. Esta gran capacidad de almacenamiento genera un amortiguamiento ante períodos de variabilidad hidrológica entre un año y otro y períodos de sequía a largo plazo, al permitir el almacenamiento de excedentes de agua durante años de abundancia y su consumo durante años de escasez. </p>
+				<p>Esta gran capacidad de almacenamiento a nivel Cuenca es lo que ha permitido al Buró de Reclamación continuar cumpliendo sus obligaciones en materia de entregas de agua durante el período de sequía actual. Cabe señalar, sin embargo, que ciertos tramos de cabecera en la Cuenca Alta en ocasiones experimentan escasez localizada debido a insuficientes escurrimientos durante años secos.</p>
+		        
+		        
+		    
+		    <object id="utah" data="img/utah.svg?version=1.1.0" alt="30 cm de agua"></object>
+		    
+		    <div class="graphCaption">
+				<p>El volumen de agua que se puede almacenar en el sistema de embalses del Río Colorado es suficiente para cubrir el Estado de Utah en aproximadamente 30 centímetros de agua. Las dimensiones que se muestran arriba no están a escala.</p></div>
+		    
+		    
+		    
+				
+				<button class="supportinginfo" id="section7Button">Información de apoyo</button>
+				
+				<div class="supportingInfoContent" id="section7Info">
+					<p>  <a href="http://www.usbr.gov/lc/region/programs/crbstudy/finalreport/Study%20Report/CRBS_Study_Report_FINAL.pdf" target="_blank">Buró de Reclamación. Estudio de Oferta y Demanda de Agua de la Cuenca del Río Colorado, 2012.</a> </p>
+		
+			</div>
+			
+			</div>
+			
+			<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="basinReservoirLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="basinReservoirLink" class="takeLinkBlue" >
+					<input id="basinReservoirURL" title="Link to CRB Reservoir" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#basinReservoirContainer">
+				</div>
+			</div>
+			
+		</div>
+		
+		<script>
+		  var button = $('#section7Button');
+		
+		  button.click(function() {
+		    $('#section7Info').toggle();
+		  });
+		  
+		  $('#basinReservoirLinkOut').on('click', function(){
+					$('#basinReservoirLink').toggle();
+					$('#basinReservoirURL').select();
+				});
+		
+		</script>
+				</section>
+            </div>
+            <div id="SupplyDemand" class="container">
+                <section id="mainmessage4" class="section">
+		<div class="widget">
+		
+			<div id="keynote5" class="keynote">
+		    	<div id="pin5" class="pin">
+		        	<h2>El desarrollo en el occidente de EE.UU. continúa, y por ende aumenta la demanda de agua en la Cuenca del Río Colorado.</h2>
+		    	</div>
+			</div>
+		    
+		</div>
+		
+		<script>
+		
+			$('#supplyDemandLinkOut').on('click', function(){
+				$('#supplyDemandLink').toggle();
+				$('#supplyDemandURL').select();
+				});
+		
+		</script>
+		   
+		    
+					</section>
+            </div>
+            <div id="waterUsageContainer" class="container">
+                <section id="water-usage" class="section">
+		<div class="widget">
+		  <div class="sectionContent">
+		      <p>Desde principios del siglo XX, la demanda de agua en la Cuenca del Río Colorado ha ido en aumento, mientras que la oferta de agua, en promedio, ha disminuido. Durante el periodo de 16 años anterior a la firma del <a href="http://www.usbr.gov/lc/region/g1000/pdfiles/crcompct.pdf" target="_blank">Pacto del Río Colorado</a> de 1922, el cual se utilizó para designar el uso consuntivo beneficioso de 9,251 millones de metros cúbicos (mcm) tanto a la Cuenca Alta como a la Baja, el promedio anual del escurrimiento virgen en la Cuenca Alta era de unos 22,200 mcm. (1906-1921). En la época en que se ejecutó el Tratado Internacional de Aguas de 1944 entre México y EE.UU., el promedio anual del escurrimiento virgen en la Cuenca Alta era de unos 20,110 mcm (1906-1944). El promedio anual actual del escurrimiento virgen en la Cuenca Alta es de unos 18,260 mcm (1906-2015).  </p>
+		      
+			  <div id="waterUsageHiddenContent" class="hiddenContent">
+		      <p>En la medida que el promedio anual del escurrimiento virgen ha ido disminuyendo, la diferencia entre la oferta y la demanda de agua se ha reducido y el sistema del Río Colorado ha tenido que operar con márgenes cada vez más estrechos. A raíz de dicha disminución en los escurrimiento vírgenes y a un aumento en el consumo global de agua en la Cuenca, el sistema del Río Colorado actualmente enfrenta una aparente situación de sobre-asignación (Buró de Reclamación, 2012).</p>
+		      
+		      <p>Las proyecciones climáticas indican una posibilidad de condiciones más extremas, con períodos de escasez y abundancia más prolongados y pronunciados. La cooperación y la colaboración serán clave para encontrar soluciones sostenibles y enfrentar los retos actuales y futuros en la gestión de recursos hídricos.</p>
+			  </div>
+		      
+		
+		    <p id="waterUsageReadMore" class="readMore">Leer más >></p>
+		
+		<h4>Para ver detalles adicionales, posicione su cursor sobre las distintas secciones de la gráfica a continuación.</h4>
+		
+		  <div id="JrGraph">
+		    <object id="animated-object" class="triggerMe" data="img/flow_animation-desktop.svg?version=1.1.0" type="image/svg+xml"></object>
+			
+			<object id="animated-object-mobile" class="triggerMe" data="img/flow_animation-mobile.svg?version=1.1.0" type="image/svg+xml"></object>
+		
+		    <div class="graphCaption">
+		      <p>La gráfica anterior ilustra las tendencias en la oferta y el consumo de agua en la Cuenca del Río Colorado. Cuando el consumo (línea roja) excede la oferta de agua (línea azul) en un año determinado, el volumen de agua almacenada se reduce. Durante los últimos 20 años, la oferta promedio y el consumo promedio de agua han sido más o menos iguales. Bajo estas condiciones, los embalses se reponen mucho más lentamente. Los datos de oferta y consumo de agua que aparecen en la gráfica anterior los estima el Buró de Reclamación mediante información de contabilidad del agua, datos de hidromedición del Servicio Geológico de los Estados Unidos, y otras fuentes.</p>
+		      
+		      <p>En dicha gráfica, el consumo de agua se muestra como “uso consuntivo” (derivaciones de aguas superficiales y extracción de agua subterránea, menos los caudales de retorno medidos y no medidos) según lo calcula el Buro de Reclamación en sus <a href=" http://www.usbr.gov/lc/region/g4000/wtracct.html" target="_blank">informes anuales de contabilidad del agua</a>. El Servicio Geológico de los Estados Unidos realiza sus propias estimaciones de consumo de agua tomando en cuenta extracciones de aguas superficiales y subterráneas, e incorporando el agua que se utiliza y se devuelve al cauce.</p>
+		      
+		    </div>
+		    
+		    <button class="supportinginfo spacer" id="section10Button">Información de apoyo</button>
+		    <div class="supportingInfoContent" id="section10Info">
+		        
+		        
+		        <p>Bureau of Reclamation. 2012. <a href="http://www.usbr.gov/lc/region/programs/crbstudy/finalreport/index.html" target="_blank">Colorado River Basin Water Supply and Demand Study</a>.</p>
+		        
+		        <p>Enlaces web a condiciones actuales de los embalses en la <a href="http://www.usbr.gov/uc/water/basin/tc_cr.html" target="_blank">Cuenca Alta</a> y <a href="http://www.usbr.gov/lc/region/g4000/hourly/hourly.html" target="_blank">Cuenca Baja</a>.</p>
+		        
+		    </div>
+		    
+		    
+		  </div>
+				
+			</div>
+			
+			<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img  id="waterUsageLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="waterUsageLink" class="takeLinkBlue" >
+					<input id="waterUsageURL" title="Link to Water Usage" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#waterUsageContainer">
+				</div>
+			</div>
+			
+		</div>
+		<script>
+			var waterUsageReadMore = $('#waterUsageReadMore');
+			var waterUsageHiddenContent = $('#waterUsageHiddenContent');
+			
+			waterUsageReadMore.on('click', function(){
+				
+				waterUsageHiddenContent.slideToggle('slow');
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+				});	
+				
+				$('#waterUsageLinkOut').on('click', function(){
+					$('#waterUsageLink').toggle();
+					$('#waterUsageURL').select();
+				});
+		</script>
+				</section>
+            </div>
+            <div id="DecliningStorage" class="container">
+                <section id="mainmessage6" class="section">
+		<div class="widget">
+		
+			<div id="keynote7" class="keynote">
+		    	<div id="pin7" class="pin">
+		        	<h2>La reducción en la oferta de agua durante la sequía actual ha ocasionado una disminución en las elevaciones de los Lagos Mead y Powell.</h2>
+					
+		    	</div>
+			</div>
+		
+		</div>
+		
+		<script>
+		
+			$('#decliningStorageLinkOut').on('click', function(){
+				$('#decliningStorageLink').toggle();
+				$('#decliningStorageURL').select();
+				});
+		
+		</script>		</section>
+            </div>
+            <div id="beforeAfterContainer" class="container">
+                <section id="before-after" class="section">
+		<div class="widget">
+		  <div class="sectionContent" id="before-after-section">
+		    <p>A medida que los niveles de los embalses de Lago Mead y el Lago Powell disminuyen, otros recursos, tales como la generación hidroeléctrica, actividades recreativas y calidad de agua, también se ven afectados.</p>
+		
+		
+		<!--landsat-->
+		<figure class="cd-image-container">
+		<img src="../img/before-after/powellafter.jpg?version=1.1.0" alt="Original Image" />
+		<span class="cd-image-label button-after" data-type="original">2014</span>
+		<div class="cd-resize-img">
+		<!-- the resizable image on top -->
+		<img src="../img/before-after/powellbefore.jpg?version=1.1.0" alt="Modified Image" />
+		<span class="cd-image-label button-before" data-type="modified">1999</span>
+		</div>
+		<span class="cd-handle"></span>
+		<!-- slider handle -->
+		</figure>
+		<!-- cd-image-container -->
+		<div class="graphCaption">
+		<p>En la imagen interactiva con botón de flechas que antecede puede observarse el cambio en la extensión superficial del Lago Powell, de las condiciones previas a la sequía en el año 1999, a las condiciones de sequía actuales hasta el año 2014.  El área roja que emerge representa la pérdida en el espejo del embalse en la medida que ha ido disminuyendo la elevación de dicho lago. Estos mapas se basan en imágenes de superficie con corrección de reflectancia adquiridas por el  <a href="http://landsat.usgs.gov/" target="_blank">satélite Landsat</a> del Servicio Geológico de los Estados Unidos durante el mes de Junio en 1999 y 2014. Se fusionaron imágenes adquiridas por Landsat con 16 días de diferencia entre sí con el fin de generar imágenes compuestas libres de nubes que permitieran la medición y comparación de los cambios.
+		 </p>
+		</div>
+		
+			<!--landsat-->
+		  <figure class="cd-image-container">
+		    <img src="../img/before-after/after05.jpg?version=1.1.0" alt="Original Image" />
+		    <span class="cd-image-label button-after" data-type="original">2014</span>
+		    <div class="cd-resize-img">
+		      <!-- the resizable image on top -->
+		      <img src="../img/before-after/before05.jpg?version=1.1.0" alt="Modified Image" />
+		      <span class="cd-image-label button-before" data-type="modified">1999</span>
+		    </div>
+		    <span class="cd-handle"></span>
+		    <!-- slider handle -->
+		  </figure>
+		  <!-- cd-image-container -->
+		  <div class="graphCaption">
+		  	<p>En la imagen interactiva con botón de flechas que antecede puede observarse el cambio en la extensión superficial del Lago Mead, de las condiciones previas a la sequía en el año 1999, a las condiciones de sequía actuales hasta el año 2014. El área roja que emerge representa la pérdida en el espejo del embalse en la medida que ha ido disminuyendo la elevación de dicho lago. Estos mapas se elaboraron utilizando datos del satélite Landsat del Servicio Geológico de Los Estados Unidos de la misma manera que se describe al calce de las imágenes anteriores relativas al Lago Powell.   </p>
+		  </div>
+		  
+		
+			
+		  
+		<!--Hoover Dam-->
+		  <figure id="hooverdam" class="cd-image-container">
+		    <img src="../img/before-after/after02.jpg?version=1.1.0" alt="Original Image" />
+		    <span class="cd-image-label button-after" data-type="original">2015</span>
+		    <div class="cd-resize-img">
+		      <!-- the resizable image on top -->
+		      <img src="../img/before-after/before02.jpg?version=1.1.0" alt="Modified Image" />
+		      <span class="cd-image-label button-before" data-type="modified">2001</span>
+		    </div>
+		    <span class="cd-handle"></span>
+		    <!-- slider handle -->
+		  </figure>
+		  <!-- cd-image-container -->
+		  
+		  <div class="extraPics">
+			<img src="../img/before-after/extrapic02.jpg?version=1.1.0" alt="Lake Mead at Hoover Dam 2001" />
+			<img src="../img/before-after/extrapic03.jpg?version=1.1.0" alt="Lake Mead at Hoover Dam 2015" />
+		  </div>
+		  
+		  <div class="graphCaption">
+		  	<p>Entre 2001 y 2015, la elevación del Lago Mead se redujo de 364.5 a 327.7 metros; es decir, un descenso de 36.9 metros. Para visualizar la disminución en el nivel del embalse durante este periodo, utilice el botón con flechas que aparece en la foto superior para desplazarse horizontalmente. Dicha disminución en el nivel del agua ha expuesto una banda blanca de roca mineralizada alrededor de los bordes. Asimismo, el decreciente nivel en el embalse ha dejado parcialmente expuestas las cuatro torres de la obra de toma en la Presa Hoover, dos en el lado derecho y dos en el lado izquierdo. Estas torres de toma canalizan agua del Lago Mead a conductos forzados que alimentan a los 17 generadores hidroeléctricos con los que cuenta la Presa Hoover. El agua pasa a través de los generadores, creando electricidad en su trayecto, y posteriormente se descarga de vuelta al Río Colorado aguas abajo de la Presa. </p>
+			<p id="hideMe" class="hiddenContent">Las fotos en la parte inferior muestran las condiciones del Lago Mead y la estructura en la parte superior de la Presa Hoover en 2001 a una elevación 364.5 metros (foto de la izquierda) y las condiciones en Junio de 2015, a una elevación de 327.7 metros (foto de la derecha). En las fotos en la parte inferior también puede observarse el vertedor Nevada en la esquina inferior derecha de cada una de ellas. </p>
+		  </div>
+		  <div id="beforeAfter01HiddenContent" class="hiddenContent">
+		  	<p>El Buró de Reclamación estima que por cada metro de disminución en la elevación del Lago Mead, la capacidad de generación eléctrica de la Presa Hoover se reduce en aproximadamente 5.7 megavatios. Desde la última ocasión en que el Lago Mead estuvo a capacidad, lo cual fue en el año 2000, la capacidad de generación en la Presa Hoover ha disminuido de 2,074 a 1,563 megavatios (hasta Agosto de 2015). EL Buró de Reclamación ha mitigado parte de dicho impacto mediante el reemplazo de turbinas convencionales con turbinas “de cabeza ancha”, las cuales tienen la capacidad de generar con mayor eficiencia a niveles más bajos en el embalse, así como mediante mejoras importantes en la eficiencia de la central hidroeléctrica. </p>
+		  	<p>En el Lago Powell, la disminución en el nivel del embalse representa un riesgo a la capacidad de generación de la planta eléctrica de la Presa Glen Canyon. Cuando la elevación cae por debajo de 1,064 metros, la Presa Glen Canyon pierde su capacidad de generar energía eléctrica. Según un análisis realizado por el Buró de Reclamación en agosto de 2015, el año más cercano en que se anticipa pudiera presentarse dicha elevación sería 2019 (existe un 5% de probabilidad de que esto ocurra). Desde que el Lago Powell terminó de llenarse en el año 1980, la elevación más baja al que ha llegado el espejo de agua fue de 1,083 metros (33 por ciento de capacidad) en Abril de 2005; es decir, aproximadamente 20 metros por encima del nivel mínimo necesario para generación eléctrica.</p>
+		  </div>
+		  
+		  <p id="beforeAfter01ReadMore" class="readMore">Leer más >></p>
+		
+		
+		<!--Docks-->
+		  <figure class="cd-image-container">
+		    <img src="../img/before-after/after04.jpg?version=1.1.0" alt="Original Image" />
+		    <span class="cd-image-label button-after" data-type="original">2015</span>
+		    <div class="cd-resize-img">
+		      <!-- the resizable image on top -->
+		      <img src="../img/before-after/before04.jpg?version=1.1.0" alt="Modified Image" />
+		      <span class="cd-image-label button-before" data-type="modified">2003</span>
+		    </div>
+		    <span class="cd-handle"></span>
+		    <!-- slider handle -->
+		  </figure>
+		  <!-- cd-image-container -->
+		  
+		  <div class="graphCaption">
+		  	<p>La imagen interactiva con botón de flechas que antecede muestra el Puerto Hemenway, ubicado en la parte suroeste del Lago Mead, y la ubicación de la Marina Las Vegas a una elevación de 351.1 metros en enero de 2003, así como la nueva ubicación de la Marina Las Vegas a una elevación de 328.6 metros en mayo de 2015. Las fotos asimismo ilustran el aumento en la exposición de la ribera del Lago Mead y el surgimiento de las Islas Boulder, ubicadas en el lado derecho de la imagen, a raíz de la disminución en el nivel del embalse.</p>
+		  </div>
+		  
+		  	<div id="beforeAfter02HiddenContent" class="hiddenContent">
+		  
+		  		<p>La continua disminución en la elevación del Lago Mead ha afectado a las marinas e instalaciones de puesta a flote de embarcaciones en el Área Recreativa Nacional del Lago Mead, haciendo necesaria la reubicación de dichas marinas y la extensión de rampas para botes en aras de mantener en operación dichas instalaciones recreativas. A fin de continuar proporcionando acceso a embarcaciones ante las reducciones en los niveles del embalse, el Servicio de Parques Nacionales – quien tiene a su cargo el Área Recreativa Nacional del Lago Mead – ha tenido que <a href="http://www.azcentral.com/news/articles/2010/11/01/20101101lake-mead-water-level-down.html" target="_blank">extender las rampas de puesta a flote desde el año 2002</a> en adelante y <a href="http://bouldercityreview.com/sections/news/lake-meadhoover-dam/lake-mead%E2%80%99s-level-rises-slightly.html" target="_blank">planea invertir alrededor de $5 millones de dólares en extensiones de rampas en 2015</a>. En 2007 se volvió imposible acceder a la Marina Overton Beach navegando, por lo que las instalaciones de Overton Beach tuvieron que trasladarse a dos marinas distintas, Calville Bay y Temple Bar. En 2008, la Marina Lago Mead se trasladó de la ubicación en la que se había  encontrado desde los años 1960 a su ubicación actual en el Puerto Hemenway.</p>
+		      <p>Además de afectar el abastecimiento de agua, el cambio de los niveles del embalse también incide en el ecosistema acuático. Cambios en el nivel del agua y afectaciones naturales, entre ellas fuertes precipitaciones y los escurrimientos que ocasionan en la localidad, pueden ocasionar que sedimentos vuelvan a suspenderse en el agua. Debido a que algunos de los sedimentos en el Lago Mead contienen contaminantes, si volvieran a suspenderse podría generar un riesgo a la salud ecológica (<a href="http://pubs.usgs.gov/circ/1381/pdf/circ1381.pdf" target="_blank">Rosen et al., 2012</a>).</p>
+				
+			</div>
+			
+			<p id="beforeAfter02ReadMore" class="readMore">Leer más >></p>
+		  
+		  <button class="supportinginfo" id="sectionBAButton">Información de apoyo</button>
+		  
+		  <div class="supportingInfoContent" id="sectionBAInfo">
+		  	
+		      <p>Illia, T. 2010. <a href="http://southwest.construction.com/southwest_contractor_news/2010/0927_LakeMeadLevel.asp" target="_blank">Big Drop in Lake Mead Level Curbs Hoover Water, Power</a>. ENR Southwest website.</p>
+			
+		      <p>Kuckro, R., 2014. <a href="http://southwest.construction.com/southwest_contractor_news/2010/0927_LakeMeadLevel.asp" target="_blank">Receding Lake Mead poses challenges to Hoover Dam's power output</a>. E&amp;E Publishing EnergyWire website.</p>
+		
+		      <p>Rosen, M.R., Turner, K., Goodbred, S.L., and Miller, J.M., eds., 2012, <a href="http://pubs.usgs.gov/circ/1381/pdf/circ1381.pdf" target="_blank">A Synthesis of Aquatic Science for Management of Lakes Mead and Mojave</a>: U.S. Geological Survey Circular 1381, 162 p. </p>
+			
+		  </div>
+		  
+		  
+		  
+		  </div>
+		  
+		  	<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="beforeAfterLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="beforeAfterLink" class="takeLinkBlue" >
+					<input id="beforeAfterURL" title="Link to Before and After" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#beforeAfterContainer">
+				</div>
+			</div>
+		  
+		</div>
+		
+		<script>
+		    var button = $('#sectionBAButton');
+		    
+		    button.click(function() {
+		                 $('#sectionBAInfo').toggle();
+		                 });
+						 
+			var beforeAfter01ReadMore = $('#beforeAfter01ReadMore');
+			var beforeAfter01HiddenContent = $('#beforeAfter01HiddenContent');
+			
+			beforeAfter01ReadMore.on('click', function(){
+				
+				beforeAfter01HiddenContent.slideToggle('slow');
+				$('#hideMe').toggle();
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+				});	
+				
+				$('#beforeAfter02ReadMore').on('click', function(){
+				
+				$('#beforeAfter02HiddenContent').slideToggle('slow');
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+				});	
+				
+				$('#beforeAfterLinkOut').on('click', function(){
+					$('#beforeAfterLink').toggle();
+					$('#beforeAfterURL').select();
+				});
+		    </script>		</section>
+            </div>
+            <div id="Shortage" class="container">
+                <section id="mainmessage7" class="section">
+		<div class="widget">
+			<div id="keynote8" class="keynote">
+		    	<div id="pin8" class="pin">
+		        	<h2>La posibilidad de una condición de escasez en la Cuenca Baja podría ocasionar una reducción en las entregas de agua.</h2>
+		        </div>
+		    </div> 
+			
+		</div>
+		
+		<script>
+		
+			$('#shortageLinkOut').on('click', function(){
+				$('#shortageLink').toggle();
+				$('#shortageURL').select();
+				});
+		
+		</script>		</section>
+            </div>
+            <div id="meadStaticContainer" class="container">
+                <section id="lake-mead-static" class="section">
+		<div class="widget">
+			<div class="sectionContent">
+		        <p>Según se estipula en los <a href="http://www.usbr.gov/lc/region/programs/strategies.html" target="_blank">Lineamientos Interinos 2007</a> del Buró de Reclamación, en caso que se anticipe que la elevación del Lago Mead el 1º de Enero sea de 327.7 metros o menor en función de una proyección del mes de Agosto, se determinará una condición de escasez en la Cuenca Baja. Las proyecciones mensuales realizadas por el Buró de Reclamación a través de un modelo operativo denominado “Estudio de 24 Meses” se utilizan para establecer las condiciones de operación para los Lagos Mead y Powell.</p>
+		        
+				<p>Para conocer más acerca de las condiciones operativas del Lago Mead, la manera en que se determinan las condiciones operativas, y los posibles efectos de la sequía en las entregas de agua en la Cuenca Baja, favor de proceder a la siguiente visualización.</p>
+				
+				<h4>Para ver detalles adicionales, posicione su cursor sobre las distintas secciones de la gráfica a continuación.</h4>
+		
+				<div id="meadElevationContainer">
+					<object id="mead-elev-object" data="img/mead_elev_projected-desktop.svg?version=1.1.0" type="image/svg+xml"></object>
+					<object id="mead-elev-object-mobile" data="img/mead_elev_projected-mobile.svg?version=1.1.0" type="image/svg+xml"></object>
+					<div class="graphCaption">
+		                <p>La gráfica anterior ilustra las elevaciones históricas en el Lago Mead (en base mensual) desde el año 2000, las elevaciones proyectadas para 2016 y 2017, y las condiciones operativas anuales. </p>
+		                
+		        </div>
+		            
+		                
+		        <p>En la medida que la elevación del Lago Mead disminuye, la Cuenca Baja se acerca cada vez más a su primera condición de escasez. Desde que comenzó la sequía en el año 2000 a la fecha, la reducción en la elevación del Lago Mead ha sido de casi 42.7 metros y ha sufrido disminuciones cada año salvo por los años 2005 y 2011. El Buró de Reclamación lleva a cabo proyecciones de las elevaciones del Lago Mead, mismas que se resumen en los <a href="http://www.usbr.gov/lc/region/g4000/24mo/index.html" target="_blank">Informes del Estudio de 24 Meses de la Cuenca del Río Colorado</a>. El modelo del Estudio de 24 Meses simula las operaciones en 12 de los principales embalses en la Cuenca del Río Colorado. Las proyecciones se utilizan para avalar decisiones anuales y mensuales en materia de cómo operar el sistema durante los siguientes 1 a 2 años. Las condiciones anuales de operación para el Lago Mead y el Lago Powell durante el año siguiente se basan en la elevación del embalse proyectada para el 1º de Enero que arroja el Estudio de 24 Meses correspondiente al mes de Agosto, de conformidad con el Registro de Decisión 2007 en materia de los Lineamientos Interinos del Río Colorado en Caso de Escasez de la Cuenca Baja y las Operaciones Coordinadas para los Lagos Powell y Mead (<a href="http://www.usbr.gov/lc/region/programs/strategies/RecordofDecision.pdf" target="_blank">Lineamientos Interinos de 2007</a>).  </p>
+				
+		        <div id="lakeMeadHiddenContent" class="hiddenContent">
+		        <p>El Estudio de 24 Meses utiliza la hidrología de escurrimiento pronosticada para la Cuenca Alta (proporcionada por el <a href="http://www.cbrfc.noaa.gov/" target="_blank">Centro de Pronósticos de la Cuenca del Río Colorado</a>), las proyecciones para las operaciones de las presas y para los programas de derivaciones y uso consuntivo, entre otros factores, para generar un escenario único de las posibles condiciones de los embalses.</p>
+		       
+		       
+		       <p>Los Lineamientos Interinos de 2007, los cuales se aprobaron en diciembre de 2007 y estarán en vigor hasta 2026, estipulan el procedimiento autorizado para determinar las condiciones de operación y las extracciones anuales para el Lago Powell y el Lago Mead en toda la gama de funcionamiento de los embalses. Los Lineamientos Interinos de 2007 incluyen criterios para la implementación de condiciones de excedentes y escasez en la Cuenca Baja del Río Colorado. Las proyecciones para el 1º de enero y las operaciones anuales resultantes para el Lago Mead y el Lago Powell se informan en el Plan Anual de Operación (AOP en inglés) para Vasos de Almacenamiento del Río Colorado para el año siguiente. Los <a href="http://www.usbr.gov/lc/region/g4000/aop/index.html" target="_blank">Planes Anuales de Operación</a> actuales y de años anteriores se encuentran disponibles en el sitio web del Buro de Reclamación.</p>
+		                
+		        <p></p>
+				</div>
+				
+				<p id="lakeMeadReadMore" class="readMore">Leer más >></p>
+		                
+		    
+				</div>
+			</div>
+			
+			<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="lakeMeadLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="lakeMeadLink" class="takeLinkBlue" >
+					<input id="lakeMeadURL" title="Link to Lake Mead Projections" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#meadStaticContainer">
+				</div>
+			</div>
+		
+		
+		</div>
+		
+		<script>
+			
+			var lakeMeadReadMore = $('#lakeMeadReadMore');
+			var lakeMeadHiddenContent = $('#lakeMeadHiddenContent');
+			
+			lakeMeadReadMore.on('click', function(){
+				
+				lakeMeadHiddenContent.slideToggle('slow');
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+				});	
+				
+				$('#lakeMeadLinkOut').on('click', function(){
+					$('#lakeMeadLink').toggle();
+					$('#lakeMeadURL').select();
+				});
+		</script>		</section>
+            </div>
+            <div id="meadAnimatedContainer" class="container">
+                <section id="lake-mead-animated" class="section">
+		<div class="widget">
+			<div id="meadSVGContainer">
+				<h2>Lake Mead</h2>
+				<object id="mead-object" data="img/mead_scene_animated-desktop.svg?version=1.1.0" type="image/svg+xml">
+				</object>
+				<object id="mead-object-mobile" data="img/mead_scene_animated-mobile.svg?version=1.1.0" type="image/svg+xml">
+				</object>
+			</div>
+			<div class="SVGInfo" id="draw-river">
+				<div class="graphCaption">
+					<p>El Río Colorado es una de las principales fuentes de suministro de agua para riego y uso residencial en Arizona, el Sur de California, el Sur de Nevada y partes del noroeste de México.</p>
+				</div>
+			</div>
+			<div class="SVGInfo" id="draw-basin">
+				<div class="graphCaption">
+		        	<p>La Región del Bajo Río Colorado del Buró de Reclamación <a href="http://www.usbr.gov/lc/region/g4000/wtracct.html" target=»_blank»>mantiene los registros de derivaciones, retornos y uso consuntivo</a> de agua entregada del cauce principal del Río Colorado aguas abajo de Lees Ferry a <a href="http://www.usbr.gov/lc/region/g4000/contracts/entitlements.html" target="_blank">derechohabientes</a> dentro de la Cuenca Baja del Río Colorado. </p>
+		
+						<p>El pictograma que antecede ilustra el uso consuntivo promedio por parte de ciertos derechohabientes del Bajo Río Colorado durante el período de 5 años que comprende del año 2010 al año 2014. Cada bloque azul representa un volumen de 123 millones de metros cúbicos (mcm), y los bloques parcialmente sombreados en azul representan volúmenes menores de 123 mcm. Para conocer el consumo promedio (2010-2014) por parte de los derechohabientes seleccionados (resaltados en color verde) del Bajo Río Colorado, posicione su cursor sobre las distintas barras. </p>
+		
+		
+				</div>
+				
+		
+				 
+			</div>
+			<!--draw-basin-->
+			<div class="SVGInfo" id="highlight-user-2">
+				<div class="graphCaption">
+		        	<p>El pictograma que antecede ilustra el rango de elevación (de aproximadamente 365.8 a 374.6 metros) y las entregas anuales de agua en la Cuenca Baja cuando el Lago Mead está funcionando en una condición de Excedentes con Control de Avenidas. Cuando el Lago Mead está operando bajo condiciones de control de avenidas, dichas operaciones se coordinan con el Cuerpo de Ingenieros del Ejército de Los Estados Unidos, de conformidad con el Acuerdo de Trabajo de Campo de 1984 entre el Buró de Reclamación y el Cuerpo de Ingenieros del Ejército de los Estados Unidos. Según se estipula en el <a href="http://www.ibwc.state.gov/Files/1944Treaty.pdf" target="_blank">Tratado Internacional de Aguas celebrado entre México y Estados Unidos en 1944</a>, cuando el Lago Mead opere en condiciones de control de avenidas, se entregarán 247 millones de metros cúbicos (mcm) adicionales de agua a México, para un total de entrega anual de 2,100 mcm. Para ver información detallada de las entregas, posicione su cursor sobre los distintos cuadros azules y estados. </p>
+		        	
+		
+				</div>
+		
+		         
+			</div>
+			<!--highlight-user-2-->
+			<div class="SVGInfo" id="mead-info-1">
+				<div class="graphCaption">
+		                <p>Se considera que existe una Condición de Excedentes Cuantificados o Excedentes Domésticos cuando se proyecta que la elevación del Lago Mead el 1º de Enero del año siguiente será de entre 349.0 metros y aproximadamente 365.8 metros. En una condición de excedentes, los <a href="http://www.usbr.gov/lc/region/g4000/contracts/entitlements.html" target="_blank">derechohabientes</a> de la Cuenca Baja quedan facultados para tomar entregas de aguas adicionales, según lo permitan sus derechos. En cumplimiento de lo pactado en el Acta 319 conforme al Tratado Internacional de Aguas celebrado entre México y EE.UU. en 1944, México podría asimismo disponer de entregas adicionales de agua dentro de este rango de elevación. Para ver información detallada de las entregas, posicione su cursor sobre los distintos cuadros azules y estados.  </p>
+						<div id="lakeMeadHidden03" class="hiddenContent">
+		                	<p>Por favor visite el <a href="http://www.ibwc.state.gov/home.html" target="_blank">Sitio Web de la Comisión Internacional de Límites y Aguas</a> para conocer más acerca del Tratado Internacional de Aguas celebrado entre México y Estados Unidos en 1944 y del <a href="http://www.ibwc.gov/Files/Minutes/Minute_319.pdf" target="_blank">Acta 319</a> (en vigor hasta el año 2017).</p>
+						</div>
+				</div>
+				<p id="lakeMeadRead03" class="readMore">Leer más >></p>
+			</div>
+			<!--mead-info-1-->
+			<div class="SVGInfo" id="mead-info-2">
+				<div class="graphCaption">
+		        	<p>Una Condición de Excedentes Normales o Condición de Excedentes Creados Intencionalmente (ICS, por sus siglas en inglés) existe cuando se proyecta que la elevación del Lago Mead el 1º de Enero del año siguiente será de entre 327.7 y 349.0 metros. Bajo una Condición de Excedentes Normales o Condición de ICS, las entregas de agua en la Cuenca Baja durante el año calendario se limitarán a 9,250 millones de metros cúbicos (mcm), más o menos cualquier crédito por la creación o entrega de ICS. Para ver información detallada de las entregas, posicione su cursor sobre los distintos cuadros azules y estados.</p>
+					<div id="lakeMeadHidden04" class="hiddenContent">
+		        		<p>Según se estipula en el Tratado Internacional de Aguas celebrado entre México y Estados Unidos en 1944, cuando el Lago Mead no está operando en Condición de Control de Avenidas, las entregas de agua a México durante el año calendario se limitaran a 1,850 mcm, más o menos cualquier agua diferida, Agua Mexicana Creada Intencionalmente (ICMA), o entregas adicionales de agua conforme al Acta 319. </p>
+					</div>
+				</div>
+				
+				<p id="lakeMeadRead04" class="readMore">Leer más >></p>
+				
+			</div>
+			<!--mead-info-2-->
+			<div class="SVGInfo" id="mead-info-3">
+				<div class="graphCaption">
+		       		<p>De conformidad con los Lineamientos Interinos de 2007, existe una Condición de Escasez Nivel 1 para la Cuenca Baja cuando se proyecta que la elevación del Lago Mead el 1º de Enero del año siguiente será de entre 320.0 y 327.7 metros. En este caso, las entregas anuales para Nevada y Arizona tendrán reducciones de 16 millones de metros cúbicos y 395 millones de metros cúbicos, respectivamente. Los cuadros amarillos indican reducciones de entrega a los Estados. Para ver información detallada de las entregas, posicione su cursor sobre los distintos cuadros azules y estados.</p>
+					<div id="lakeMeadHidden05" class="hiddenContent">
+						<p>Según se estipula en el Acta 319, cuando se proyecta que la elevación del Lago Mead el 1º de Enero del año siguiente será de entre 320.0 y 327.7 metros, la entrega anual a México podría reducirse por 62 millones de metros cúbicos (mcm). Dicha reducción podrá compensarse mediante entregas de agua diferida conforme al Acta 319 para una entrega global anual de 1,850 mcm.</p>
+					</div>
+				</div>
+				<p id="lakeMeadRead05" class="readMore">Leer más >></p>
+			</div>
+			<!--mead-info-3-->
+			<div class="SVGInfo" id="mead-info-4">
+				<div class="graphCaption">
+		        	<p>De conformidad con los Lineamientos Interinos de 2007, existe una Condición de Escasez Nivel 2 cuando se proyecta que la elevación del Lago Mead el 1º de Enero del año siguiente será de entre 312.4 y 320.0 metros. En este caso, las entregas anuales para Nevada y Arizona tendrán reducciones de 21 millones de metros cúbicos y 493 millones de metros cúbicos, respectivamente. Los cuadros amarillos indican reducciones de entrega a los Estados. Para ver información detallada de las entregas, posicione su cursor sobre los distintos cuadros azules y estados.</p>
+					<div id="lakeMeadHidden06" class="hiddenContent">
+		        		<p>Según se estipula en el Acta 319, cuando se proyecta que la elevación del Lago Mead el 1º de Enero del año siguiente será de entre 312.4 y 320.0 metros, la entrega anual para México podría reducirse por 86 millones de metros cúbicos (mcm). Dicha reducción podrá compensarse mediante entregas de agua diferida conforme al Acta 319 para una entrega global anual de 1,850 mcm.</p>
+					</div>
+				</div>
+				<p id="lakeMeadRead06" class="readMore">Leer más >></p>
+			</div>
+			<!--mead-info-4-->
+			<div class="SVGInfo" id="mead-info-5">
+				<div class="graphCaption">
+		        	<p>De conformidad con los Lineamientos Interinos de 2007, existe una Condición de Escasez Nivel 3 cuando se proyecta que la elevación del Lago Mead el 1º de Enero del año siguiente será menor a 312.4 metros. En este caso, las reducciones anuales para Nevada y Arizona serán de 25 millones de metros cúbicos y 592 millones de metros cúbicos, respectivamente. Además, en caso que la elevación del Lago Mead caiga por debajo de 312.4 metros, el Secretario del Departamento del Interior tendrá la obligación de consultar con los siete Estados que comprenden la Cuenca del Río Colorado a fin de considerar medidas adicionales que podrían tomarse de conformidad con la Ley Federal en materia. Los cuadros amarillos indican reducciones de entrega a los Estados. Para ver información detallada de las entregas, posicione su cursor sobre los distintos cuadros azules y estados.</p>
+					<div id="lakeMeadHidden07" class="hiddenContent">
+		        		<p>Según se estipula en el Acta 319, cuando se proyecta que la elevación del Lago Mead el 1º de Enero del año siguiente será menor a 312.4 metros, la entrega anual para México podría reducirse por 154 millones de metros cúbicos. Dicha reducción podrá compensarse mediante entregas de agua diferida conforme al Acta 319 para una entrega global anual de 1,850 millones de metros cúbicos.</p>
+					</div>
+				</div>
+				<p id="lakeMeadRead07" class="readMore">Leer más >></p>
+			</div>
+			<!--mead-info-5-->
+			
+			<button class="supportinginfo spacer" id="section15Button">Información de apoyo</button>
+		
+				<div class="supportingInfoContent" id="section15Info">
+		
+		
+		
+		
+					<p><a href="http://www.cbrfc.noaa.gov/" target="_blank">National Oceanic and Atmospheric Administration Colorado River Basin River Forecast Center</a>
+					</p>
+		            
+					<p><a href="http://waterdata.usgs.gov/nwis" target="_blank">U.S. Geological Survey Stream Gage Information</a></p>
+		
+		            <p><a href="http://www.usbr.gov/lc/region/g4000/24mo/index.html" target="_blank">Bureau of Reclamation Reclamation's Colorado River Basin 24-Month Study reports</a> </p>
+		            
+		            <p><a href="http://www.usbr.gov/uc/water/crsp/studies/index.html" target="_blank">Upper Colorado Region Water Operations website</a>
+		            </p>
+		            <p><a href="http://www.usbr.gov/lc/region/g4000/24mo/index.html" target="_blank">Lower Colorado Region Water Operations</a>
+		            </p>
+		            
+		            <p><a href="http://www.usbr.gov/lc/region/programs/strategies/RecordofDecision.pdf" target="_blank">2007 Record of Decision on Colorado River Interim Guidelines for Lower Basin Shortages and the Coordinated Operations for Lake Powell and Lake Mead (2007 Interim Guidelines)</a></p>
+		            
+		            
+				</div>
+				
+			<div class="exploreMore" id="lakeMeadAnimatedExtra">
+					<a href="../explore" target="_blank">
+						<img src="../img/leafletmapthumbnail.png?version=1.1.0" alt="Leaflet Map of the Colorado River Basin"/>
+					</a>
+					<p>Para conocer más acerca de los derechohabientes de agua del Bajo Río Colorado y datos respecto del uso consuntivo que recopila el Buró de Reclamación, haga clic en el siguiente botón.</p>
+					<a href="../explore" target="_blank"><button id="
+					lakeMeadAnimatedExtraButton" class="extraButton">Explorar</button></a>
+			</div>
+		</div>
+		
+		<script>
+			var button = $('#section15Button');
+		
+			button.click(function () {
+				$('#section15Info').toggle();
+			});
+			
+			$('#lakeMeadRead01').on('click', function(){
+				
+				$('#lakeMeadHidden01').toggle();
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+			});	
+				
+			$('#lakeMeadRead02').on('click', function(){
+				
+				$('#lakeMeadHidden02').toggle();
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+			});	
+			
+			$('#lakeMeadRead03').on('click', function(){
+				
+				$('#lakeMeadHidden03').toggle();
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+			});	
+			
+			$('#lakeMeadRead04').on('click', function(){
+				
+				$('#lakeMeadHidden04').toggle();
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+			});	
+			
+			$('#lakeMeadRead05').on('click', function(){
+				
+				$('#lakeMeadHidden05').toggle();
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+			});	
+			
+			$('#lakeMeadRead06').on('click', function(){
+				
+				$('#lakeMeadHidden06').toggle();
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+				});	
+			
+			$('#lakeMeadRead07').on('click', function(){
+				
+				$('#lakeMeadHidden07').toggle();
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+			});	
+		</script>		</section>
+            </div>
+	    <div id="EraOfHope" class="container">
+                <section id="end-era" class="section">
+		<div class="widget">
+			<div id="keynote9" class="keynote">
+		    	<div id="pin9" class="pin">
+		        	<h2>Una era de esperanza - comunicación, cooperación, y colaboración.</h2>
+		        </div>
+		    </div>
+			
+		</div>
+		
+		<script>
+		
+			$('#endEraLinkOut').on('click', function(){
+				$('#endEraLink').toggle();
+				$('#endEraURL').select();
+				});
+		
+		</script>		</section>
+            </div>
+	    <div id="creditsContainer" class="container">
+                <section id="credits" class="section">
+		<div class="widget">
+			<div class="sectionContent">
+		        <p>En la Cuenca del Río Colorado, existe una colaboración entre usuarios, entidades federativas y dependencias federales y locales a fin de desarrollar estrategias creativas para reducir los impactos de la sequía e incrementar el almacenamiento en los embalses de Lago Powell y Lago Mead. Entre las actividades relacionadas con la respuesta ante la sequía destacan un programa de conservación a nivel sistema y esfuerzos para la elaboración de planes de contingencia ante la sequía, tanto en la Cuenca Alta como en la Cuenca Baja. Por otra parte, se están llevando a cabo actividades continuamente con actores a través del proceso de Esfuerzo de Avance del Estudio de Cuenca y con los pueblos indígenas estadounidenses a través del Diagnóstico de Aguas Tribales de la Alianza de las Diez Tribus. Por último, la implementación del Acta 319 y sus correspondientes diálogos binacionales asimismo subrayan la importancia de la alianza y la colaboración continua entre México y EE.UU. </p>
+				
+				<div id="creditHiddenContent" class="hiddenContent">
+		
+		        <h3>Programa Piloto de Conservación a Nivel Sistema</h3>
+		        <p> En el año 2014, se celebró un contrato de financiamiento por la cantidad de $11 millones de dólares para la realización de un <a href="http://www.usbr.gov/newsroom/newsrelease/detail.cfm?RecordID=48006" target="_blank">Programa Piloto de Conservación a Nivel Sistema</strong></a> (PSCP, por sus siglas en inglés) entre el Buró de Reclamación, el Distrito de Conservación de Agua de Arizona Central (CAWCD), el Distrito Metropolitano de Agua del Sur de California (MWD), la Junta de Agua de Denver (DW), y la Autoridad del Agua del Sur de Nevada (SNWA), (los Socios Financiadores). El PSCP establece un mecanismo para financiar la generación de agua para el sistema del Río Colorado a través de acciones voluntarias de conservación de agua y reducciones voluntarias en el consumo de agua comenzando en 2015 y continuando hasta al menos 2016. El propósito del PSCP es explorar la eficacia de medidas voluntarias que pudieran utilizarse cuando sea necesario para ayudar a conservar los niveles de agua en los Lagos Powell y Mead por encima de los niveles críticos. Toda el agua que se conserve como resultado del programa piloto se consideraría agua del sistema del Río Colorado. Se han recibido propuestas al auspicio del PSCP por parte de participantes potenciales del programa en tanto la Cuenca Alta y la Cuenca Baja, y la ejecución de convenios de implementación se inició en 2015 y sigue en curso.</p>
+		
+		        <h3>Planes de Contingencia ante la Sequía</h3>
+				<p>El Buró de Reclamación también colabora con los estados de Arizona, California y Nevada en la identificación de medidas proactivas para reducir el riesgo de alcanzar elevaciones críticas en el Lago Mead. Uno de los avances en este sentido fue la suscripción de un Memorando de Entendimiento (MOU) para un programa <a href="http://www.usbr.gov/lc/region/g4000/LB_DroughtResponseMOU.pdf" target="_blank">Piloto de Acciones de Respuesta ante la Sequía</strong></a> entre el Buró de Reclamación y varias dependencias hídricas en los Estados de la Cuenca Baja en Diciembre de 2014. El MOU esboza el compromiso entre las partes de llevar a cabo sus mejores esfuerzos para generar entre 1,850 y 3,700 millones de metros cúbicos (mcm) de agua adicional en el Lago Mead para el año 2019. El Buro de Reclamación, MWD, SNWA y CAWCD acordaron tomar los primeros pasos para generar 913 mcm de agua adicional para fines de 2017. El MOU es un importante primer paso adelante y continúa la colaboración sobre posibles opciones a más largo plazo.</p>
+		
+		        <p>En la Cuenca Alta, los estados de Colorado, Nuevo México, Utah y Wyoming están avanzando en un plan con tres componentes principales: 1) la ampliación de las operaciones de las presas que componen el Proyecto de Almacenamiento del Río Colorado (CRSP); 2) la gestión voluntaria de la demanda (por ejemplo, descanso de tierras o riego deficitario), y 3) aumento del suministro (principalmente la modificación del clima, como la siembra de nubes). El Buró de Reclamación, en colaboración con los Estados de la Cuenca Alta, llevó a cabo un ejercicio de modelación que arrojó que la probabilidad de que el Lago Powell caiga por debajo de un nivel crítico de elevación podría reducirse de manera importante mediante la ampliación de operaciones en los embalses de la Cuenca Alta (CRSP) a fin de trasladar agua al Lago Powell. El Buró de Reclamación y los Estados de la Cuenca Alta están elaborando un plan de operaciones ampliadas y un convenio de implementación. Se anticipa que éstos quedarán finalizados para finales de 2016.</p>
+		
+		        <p>Además de las actividades mencionadas anteriormente, el Congreso estadounidense ha <a href="https://www.congress.gov/113/plaws/publ235/PLAW-113publ235.pdf " target="_blank"></a>autorizado fondos adicionales a través del Buró de Reclamación para actividades relacionadas con la sequía con la finalidad de aumentar el volumen de agua en el sistema del Río Colorado en el Lago Mead, el Lago Powell y otros embalses del sistema del Río Colorado para beneficio del sistema. Como parte de dicha autorización, se exige la presentación de un informe de evaluación de la eficacia de proyectos piloto de conservación de agua al Congreso en 2018, incluyendo una recomendación respecto de si las actividades emprendidas por los proyectos piloto deben continuarse. </p>
+		
+		        <h3>El <em>Esfuerzo de Avance</em></h3>
+		        <p>En mayo de 2013, el Buro de Reclamación y los usuarios de la Cuenca iniciaron un esfuerzo denominado De Avance con el fin de avanzar consideraciones a futuro y próximos pasos identificados en el Estudio de la Cuenca del Río Colorado. El <em>Esfuerzo de Avance</em> fortalece el amplio e incluyente proceso con los usuarios que se demostró en el Estudio de Cuenca con el objetivo final de identificar medidas viables para abordar los desequilibrios proyectados entre la oferta y la demanda de agua, que cuenten con una base amplia de apoyo y proporcionen una amplia gama de beneficios. El <em>Esfuerzo de Avance</em> se está realizando en fases. La Fase 1 comenzó con la formación de un equipo de coordinación y tres grupos de trabajo conformados por una diversidad de actores enfocados a la conservación y reutilización del agua, y caudales ambientales y recreativos. En Mayo de 2015 se publicó el <a href="http://www.usbr.gov/lc/region/programs/crbstudy/MovingForward/Phase1Report.html" target="_blank"><strong>Informe de la Fase 1</strong></a> , mismo que documenta las actividades y los resultados de los grupos de trabajo durante esta fase e incluye oportunidades para posibles acciones futuras.  </p>
+		
+		
+		
+		        <h3>Estudio de Aguas de los Pueblos Indígenas</h3>
+		        <p>El <a href="http://www.usbr.gov/newsroom/newsrelease/detail.cfm?RecordID=44627" target="_blank">Estudio Hídrico de la Alianza de las 10 Tribus en la Cuenca del Río Colorado</a>, el cual se inició a fines de 2013, es un esfuerzo cooperativo con la Alianza de las Diez Tribus, cuya membresía es derechohabiente de un volumen importante de derechos reservados de aguas federales cuantificadas y no cuantificadas del Río Colorado y sus afluentes. El estudio parte del fundamento técnico logrado en el Estudio de la Cuenca del Río Colorado a través de la realización de evaluaciones adicionales de la oferta y demanda de agua para dichas tribus e identifica oportunidades y retos asociados con el desarrollo de agua en los pueblos indígenas. Se anticipa que el estudio se concluya en 2016.</p>
+		
+		        <h3>Alianza Binacional</h3>
+		        <p>En Noviembre de 2012, los Estados Unidos y México llegaron a un acuerdo en materia del <a href="http://www.usbr.gov/lc/region/feature/minute319.html" target="_blank">Acta 319</strong></a> conforme al Tratado de Internacional de Agua celebrado entre México y Estados Unidos en 1944. El Acta 319 es un convenio con un horizonte de cinco años (2013 a 2017), que estipula una serie de acciones de cooperación conjunta entre México y Estados Unidos, entre ellos la distribución de excedentes durante condiciones altas en el Lago Mead, reducciones en entregas de agua durante condiciones bajas en el Lago Mead, flexibilidad en el mecanismo de Agua Mexicana Creada Intencionalmente, oportunidades para una mejor y más eficiente infraestructura, y agua para el medio ambiente. En 2014, un <a href="http://www.ibwc.state.gov/Files/Minutes/Min319_Fact_Sheet.pdf" target="_blank">flujo pulso</strong></a> de aproximadamente 130 millones de metros cúbicos fue entregado a México del 23 de marzo al 18 de mayo para beneficio del ecosistema ripario en el Delta del Río Colorado. La implementación del flujo pulso incluyó asimismo un componente de <a href="http://www.ibwc.gov/EMD/Min319Monitoring.pdf" target="_blank">monitoreo</strong></a> llevado a cabo por científicos y expertos de los Estados Unidos y México para determinar los beneficios ambientales del flujo pulso y el desempeño general del proyecto piloto. Con el éxito de la implementación binacional de este proyecto, los Estados Unidos y México esperan desarrollar un nuevo convenio binacional en el espíritu de colaboración continua para satisfacer los futuros retos en materia de gestión de recursos hídricos. </p>
+			</div>
+			
+			<p id="creditReadMore" class="readMore">Leer más >></p>
+		
+				<button class="supportinginfo" id="creditsButton2">Información de apoyo</button>
+				
+				<div class="supportingInfoContent" id="creditsInfo2">
+		
+		            <p>Bureau of Reclamation System Conservation Pilot Program. <a href="http://www.usbr.gov/newsroom/newsrelease/detail.cfm?RecordID=48006" target="_blank">October, 8, 2014 press release</a>.</p>
+		            <p><a href="http://www.usbr.gov/newsroom/docs/2014-07-30-Executed-Pilot-SCP-Funding-Agreement.pdf" target="_blank">2014 Pilot System Conservation Program Agreement</a>.</p>
+		            <p><a href="http://www.usbr.gov/lc/region/g4000/LB_DroughtResponseMOU.pdf" target="_blank">2014 Memorandum of Understanding for Lower Basin Pilot Drought Response Actions</a>.</p>
+		            <p><a href="http://www.usbr.gov/lc/region/programs/crbstudy/MovingForward/index.html" target="_blank">Colorado River Basin Moving Forward Activities</a>.</p>
+		            <p>Minute 319: Interior Secretary Salazar and Reclamation Commissioner Connor Join U.S. and Mexico Delegations for Historic Colorado River Water Agreement Ceremony.<a href="http://www.usbr.gov/lc/region/feature/minute319.html" target="_blank">November 20, 2012 press release</a>.</p>
+		        
+				</div>
+				
+				<div id="creditLogosTop">
+					<img src="../img/credit-logos/usgslogo.jpg" alt="usgs logo"/>
+					<img id="doi" src="../img/credit-logos/doi.png" alt="DOI logo"/>
+					<img src="../img/credit-logos/bor.png" alt="BOR logo"/>
+					<img src="../img/credit-logos/owdi.png" alt="OWDI logo"/>
+				</div>
+				<div id="creditLogosBottom">
+					<img  id="osu"src="../img/credit-logos/osu.png" alt="OSU logo"/>
+					<img  id="wswc"src="../img/credit-logos/wswc.png" alt="wswc logo"/>
+					<img  id="epa"src="../img/credit-logos/epa.svg" alt="EPA logo"/>
+					<img  id="cida"src="../img/credit-logos/cida.png" alt="CIDA logo"/>
+				</div>
+				
+				
+				<p>Este producto es una de las actividades Comité Asesor en Materia de Información Hídrica de la Iniciativa de Datos Abiertos de Aguas <a href="http://acwi.gov/spatial/owdi/" target="_blank"> (OWDI)</a>, y lo desarrollaron conjuntamente el Departamento del Interior de EE.UU., el Servicio Geológico de los Estados Unidos, y el Buró de Reclamación de los Estados Unidos, y con contribuciones por parte de la Agencia de Protección Ambiental de los Estados Unidos, la Universidad del Estado de Oregón, y el Consejo Hídrico de los Estados Unidos Occidentales. La intención de la OWDI es integrar información de agua que actualmente se encuentra fragmentada en un banco de datos hídricos conectado y nacional, y aprovechar los sistemas, la infraestructura y las herramientas existentes como cimiento para la innovación, modelación, intercambio de datos y el desarrollo de soluciones. El diseño de la aplicación fue inspirado por el <a href="http://nca2014.globalchange.gov/" target="_blank">Diagnóstico Nacional del Clima de 2014</a>. El uso de cualesquier nombre comercial, de empresas o productos es para fines descriptivos exclusivamente; y no deberá entenderse como un aval de dichos productos, empresas o comercios por parte el Gobierno de los Estados Unidos. </p>
+				
+			</div>
+			
+			<div class="socialMedia onWhite">
+				
+			<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Interesante visualización de la sequía en la Cuenca del Río Colorado&hashtags=crdrought,owdi%20https:%2F%2Fwww.doi.gov%2Fwater%2Fowdi.cr.drought%2Fen%2Findex.html" target="_blank">
+					<img src="../img/social-media/twitter-blue-01.svg" alt="twitter icon"/>
+				</a>		<div class="widget">
+	<a href="https://github.com/USGS-CIDA/OWDI-Lower-Colorado-Drought-Vis" target="_blank">
+		<img src="../img/social-media/github-blue-01.svg" alt="github icon"/>
+	</a>  
+</div>
+
+				<img id="creditsLinkOut" src="../img/social-media/link-blue-01.svg" alt="link icon"/>
+				<div id="creditsLink" class="takeLinkBlue" >
+					<input id="creditsURL" title="Link to Credits" type="text" value="http://doi.gov/water/owdi.cr.drought/en/index.html#creditsContainer">
+				</div>
+			</div>
+			
+		</div>
+		
+		<script>
+			$('#creditsButton2').click(function() {
+		    $('#creditsInfo2').toggle();
+		  });
+		
+			$('#creditsButton').click(function() {
+		    $('#creditsInfo').toggle();
+		  });
+		  
+		  var creditsReadMore = $('#creditReadMore');
+			var creditsHiddenContent = $('#creditHiddenContent');
+			
+				creditsReadMore.on('click', function(){
+				
+				creditsHiddenContent.slideToggle('slow');
+				
+				if($(this).text() == 'Leer más >>'){
+					$(this).text('Esconder texto');
+					}else{
+						$(this).text('Leer más >>');
+						}
+				});		
+				
+				$('#creditsLinkOut').on('click', function(){
+					$('#creditsLink').toggle();
+					$('#creditsURL').select();
+				});
+		</script>		</section>
+            </div>
+			
+		<div id="doiFooterContainer">
+                <section id="doifooter" class="section">
+		<div class="widget">
+			
+			<footer class="l-footer" role="contentinfo">
+		      <div class="l-region l-region--footer">
+		    <div id="block-panels-mini-doi-footer-branding" class="block block--panels-mini block--panels-mini-doi-footer-branding">
+		        <div class="block__content">
+		    <div class="two-column-flipped panels-container " id="mini-panel-doi_footer_branding">
+		  
+		      <div class="main two-column-flipped--main">
+		      <div class="panel-pane pane-page-logo">
+		            <a href="https://www.doi.gov" rel="external" rel="home" id="logo" title="Home"><img src="https://www.doi.gov/sites/doi.gov/themes/custom/doi_gov/logo.png" alt="Home"></a>    </div>
+		<div class="panel-pane pane-page-site-name">
+		            U.S. Department of the Interior    </div>
+		<div class="panel-pane pane-page-slogan">
+		            Protecting America's Great Outdoors and Powering Our Future    </div>
+		    </div>
+		  
+		      <div class="sidebar two-column-flipped--sidebar">
+		      <div class="panel-pane pane-block pane-menu-menu-social">
+		            <ul class="menu"><li class="first leaf"><a href="https://instagram.com/usinterior" rel="external" onclick="" data-hasqtip="43" oldtitle="DOI on Instagram" title="">Instagram</a></li>
+		<li class="leaf"><a href="https://www.facebook.com/USInterior" rel="external" onclick="" data-hasqtip="44" oldtitle="DOI on Facebook" title="">Facebook</a></li>
+		<li class="leaf"><a href="https://twitter.com/interior" rel="external" onclick="" data-hasqtip="45" oldtitle="DOI on Twitter" title="">Twitter</a></li>
+		<li class="leaf"><a href="http://americasgreatoutdoors.tumblr.com/" rel="external" onclick="" data-hasqtip="46" oldtitle="DOI on Tumblr" title="">Tumblr</a></li>
+		<li class="last leaf"><a href="https://www.pinterest.com/usinterior/" rel="external" onclick="" data-hasqtip="47" oldtitle="DOI on Pintrest" title="">Pintrest</a></li>
+		</ul>    </div>
+		    </div>
+		  
+		  </div>
+		  </div>
+		</div>
+		<div id="block-panels-mini-doi-footer-primary-links" class="block block--panels-mini block--panels-mini-doi-footer-primary-links">
+		        <div class="block__content">
+		    <div class="two-column-flipped panels-container " id="mini-panel-doi_footer_primary_links">
+		  
+		      <div class="main two-column-flipped--main">
+		      <div class="panel-pane pane-block pane-menu-block-1">
+			  
+		            <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+					
+		  <ul class="menu"><li class="first expanded menu-mlid-1822"><a href="https://www.doi.gov/whoweare" rel="external" title="">Who We Are</a>
+		  
+		  <ul class="menu"><li class="first leaf menu-mlid-1824"><a href="https://www.doi.gov/employees" rel="external" title="">Our Employees</a></li>
+		  
+		<li class="leaf menu-mlid-1825"><a href="https://www.doi.gov/bureaus" rel="external" title="">Bureaus &amp; Offices</a></li>
+		
+		<li class="last leaf menu-mlid-1826"><a href="https://www.doi.gov/sally-jewell" rel="external" title="">Secretary Jewell</a></li>
+		
+		</ul></li>
+		<li class="expanded menu-mlid-1827"><a href="https://www.doi.gov/ourpriorities" rel="external" title="">Our Priorities</a><ul class="menu"><li class="first leaf menu-mlid-1830"><a href="https://www.doi.gov/youth" rel="external" title="">Youth</a></li>
+		<li class="leaf menu-mlid-1831"><a href="https://www.doi.gov/climate" rel="external" title="">Climate Change</a></li>
+		<li class="leaf menu-mlid-1832"><a href="https://www.doi.gov/firstamericans" rel="external" title="">Native American Issues</a></li>
+		<li class="leaf menu-mlid-1833"><a href="https://www.doi.gov/energy" rel="external" title="">New Energy Frontier</a></li>
+		<li class="last leaf active menu-mlid-1834"><a href="https://www.doi.gov/water" rel="external" title="" class="active">Water Challenges</a></li>
+		</ul></li>
+		<li class="expanded active-trail menu-mlid-1828"><a href="https://www.doi.gov/whatwedo" rel="external" title="" class="active-trail">What We Do</a><ul class="menu"><li class="first leaf menu-mlid-1839"><a href="https://www.doi.gov/climate" rel="external" title="">Climate Change</a></li>
+		<li class="leaf menu-mlid-1840"><a href="https://www.doi.gov/cobell" rel="external" title="">Cobell / Land Buy-back</a></li>
+		<li class="leaf menu-mlid-1841"><a href="https://www.doi.gov/deepwaterhorizon" rel="external" title="">Deepwater Horizon</a></li>
+		<li class="leaf menu-mlid-1842"><a href="https://www.doi.gov/hurricanesandy" rel="external" title="">Hurricane Sandy</a></li>
+		<li class="leaf menu-mlid-1843"><a href="https://www.doi.gov/lwcf" rel="external" title="">Land &amp; Water Conservation Fund</a></li>
+		<li class="leaf menu-mlid-1845"><a href="https://www.doi.gov/energy" rel="external" title="">New Energy Frontier</a></li>
+		<li class="leaf menu-mlid-1844"><a href="https://www.doi.gov/firstamericans" rel="external" title="">Native American Issues</a></li>
+		<li class="leaf menu-mlid-1846"><a href="https://www.doi.gov/open" rel="external" title="">Open Government Initiative</a></li>
+		<li class="leaf active-trail active menu-mlid-1848"><a href="https://www.doi.gov/water" rel="external" title="" class="active-trail active">Water Challenges</a></li>
+		<li class="last leaf menu-mlid-1849"><a href="https://www.doi.gov/youth" rel="external" title="">Youth</a></li>
+		</ul></li>
+		<li class="last expanded menu-mlid-1829"><a href="https://www.doi.gov/joinus" rel="external" title="">Join Us</a><ul class="menu"><li class="first leaf menu-mlid-1835"><a href="https://www.doi.gov/youth" rel="external" title="">Youth Initiative</a></li>
+		<li class="leaf menu-mlid-1836"><a href="https://www.doi.gov/businesses" rel="external" title="">Businesses</a></li>
+		<li class="leaf menu-mlid-1837"><a href="https://www.doi.gov/pathways" rel="external" title="">Pathways Program</a></li>
+		<li class="last leaf menu-mlid-1838"><a href="https://www.doi.gov/veterans" rel="external" title="">Veterans Employment Program</a></li>
+		</ul></li>
+		</ul></div>
+		    </div>
+		    </div>
+		  
+		      <div class="sidebar two-column-flipped--sidebar">
+		      <div class="panel-pane pane-custom pane-2">
+		            <p><a href="https://www.healthcare.gov" rel="external"><img alt="Health Insurance Marketplace" src="../img/doifooter/sample-ad.jpg" style="width: 180px; height: 150px;"></a></p>
+		    </div>
+		    </div>
+		  
+		  </div>
+		  </div>
+		</div>
+		<div id="block-panels-mini-doi-footer-supporting-links" class="block block--panels-mini block--panels-mini-doi-footer-supporting-links">
+		        <div class="block__content">
+		    <div class="one-column panels-container" id="mini-panel-doi_footer_supporting_links">
+		      <div class="top one-column--top">
+		      <div class="panel-pane pane-block pane-menu-menu-secondary">
+		            <ul class="menu"><li class="first leaf"><a href="https://www.doi.gov/foia" rel="external" title="">FOIA</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/open" rel="external" title="">Open Government</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/scientificintegrity" rel="external" title="">Integrity of Scientific &amp; Scholarly Activities</a></li>
+		<li class="leaf"><a href="http://www.usa.gov" rel="external" title="">USA.gov</a></li>
+		<li class="leaf"><a href="https://business.usa.gov/" rel="external" title="">BusinessUSA</a></li>
+		<li class="leaf"><a href="http://www.whitehouse.gov" rel="external" title="">White House</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/pmb/eeo/no-fear-act" rel="external" title="">No FEAR Act</a></li>
+		<li class="leaf"><a href="http://www.doioig.gov" rel="external" title="">Inspector General</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/pfm/afr" rel="external" title="">Agency Financial Report</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/bpp" rel="external" title="">Budget &amp; Performance</a></li>
+		<li class="last leaf"><a href="http://www.bia.gov/WhoWeAre/BIA/OIS/TribalGovernmentServices/TribalDirectory/index.htm" rel="external" title="">Tribal Leaders Directory</a></li>
+		</ul>    </div>
+		    </div>
+		  
+		      <div class="main one-column--main">
+		      <div class="panel-pane pane-block pane-menu-menu-tertiary">
+		            <ul class="menu"><li class="first leaf"><a href="/" rel="external" title="">DOI Home</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/public/findajob" rel="external" title="">Find a Job</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/public/contact-us" rel="external" title="">Contact Us</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/privacy" rel="external" title="">Privacy Policy</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/disclaimer" rel="external" title="">Disclaimer</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/notices" rel="external" title="">Notices</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/accessibility" rel="external" title="">Accessibility</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/copyright" rel="external" title="">Copyright</a></li>
+		<li class="leaf"><a href="https://www.doi.gov/sites/doi.gov/files/migrated/notices/upload/Social-Media-Guidebook-Official.pdf" rel="external" title="">Social Media Guidebook</a></li>
+		<li class="last leaf"><a href="https://www.doi.gov/sitemap" rel="external" title="">Site Map</a></li>
+		</ul>    </div>
+		    </div>
+		  
+		  </div>
+		  </div>
+		</div>
+		<div id="block-panels-mini-doi-footer-information" class="block block--panels-mini block--panels-mini-doi-footer-information">
+		        <div class="block__content">
+		    <div class="two-column-flipped panels-container no-sidebar" id="mini-panel-doi_footer_information">
+		  
+		      <div class="main two-column-flipped--main">
+		      <div class="panel-pane pane-custom pane-3">
+		            <p>U.S. Department of the Interior, 1849 C Street NW, Washington, DC 20240. <a href="mailto:feedback@ios.doi.gov?subject=DOI.gov%20Feedback" rel="external">feedback@ios.doi.gov</a></p>
+		    </div>
+		    </div>
+		  
+		  
+		  </div>
+		  </div>
+		</div>
+		  </div>
+		  </footer>
+			
+		</div>
+		
+				</section>
+            </div>
+
+        </span>
+
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <script type="text/javascript" src="../js/before-after.js?version=1.1.0"></script>
+        <script type="text/javascript" src="../js/stickynav.js?version=1.1.0"></script>
+		
+    </body>
+
+</html>
